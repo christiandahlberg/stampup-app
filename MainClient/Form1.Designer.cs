@@ -44,6 +44,7 @@
             this.btnPK1.TabIndex = 0;
             this.btnPK1.Text = "Programkonstruktion 1";
             this.btnPK1.UseVisualStyleBackColor = true;
+            this.btnPK1.Click += new System.EventHandler(this.btnPK1_Click);
             // 
             // btnPK2
             // 
@@ -53,33 +54,37 @@
             this.btnPK2.TabIndex = 1;
             this.btnPK2.Text = "Programkonstruktion 2";
             this.btnPK2.UseVisualStyleBackColor = true;
+            this.btnPK2.Click += new System.EventHandler(this.btnPK2_Click);
             // 
             // btnWS1
             // 
-            this.btnWS1.Location = new System.Drawing.Point(30, 191);
+            this.btnWS1.Location = new System.Drawing.Point(30, 183);
             this.btnWS1.Name = "btnWS1";
             this.btnWS1.Size = new System.Drawing.Size(492, 23);
             this.btnWS1.TabIndex = 2;
             this.btnWS1.Text = "Web Service 1";
             this.btnWS1.UseVisualStyleBackColor = true;
+            this.btnWS1.Click += new System.EventHandler(this.btnWS1_Click);
             // 
             // btnWS2
             // 
-            this.btnWS2.Location = new System.Drawing.Point(30, 229);
+            this.btnWS2.Location = new System.Drawing.Point(30, 221);
             this.btnWS2.Name = "btnWS2";
             this.btnWS2.Size = new System.Drawing.Size(492, 23);
             this.btnWS2.TabIndex = 3;
             this.btnWS2.Text = "Web Service 2";
             this.btnWS2.UseVisualStyleBackColor = true;
+            this.btnWS2.Click += new System.EventHandler(this.btnWS2_Click);
             // 
             // btnERP
             // 
-            this.btnERP.Location = new System.Drawing.Point(30, 286);
+            this.btnERP.Location = new System.Drawing.Point(30, 271);
             this.btnERP.Name = "btnERP";
             this.btnERP.Size = new System.Drawing.Size(492, 23);
             this.btnERP.TabIndex = 4;
             this.btnERP.Text = "ERP ";
             this.btnERP.UseVisualStyleBackColor = true;
+            this.btnERP.Click += new System.EventHandler(this.btnERP_Click);
             // 
             // label1
             // 

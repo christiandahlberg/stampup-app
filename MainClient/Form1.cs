@@ -16,5 +16,30 @@ namespace MainClient
         {
             InitializeComponent();
         }
+
+        private void btnPK1_Click(object sender, EventArgs e)
+        {
+            //logic here
+        }
+
+        private void btnPK2_Click(object sender, EventArgs e)
+        {
+            //logic here
+        }
+
+        private void btnWS1_Click(object sender, EventArgs e)
+        {
+            //logic here 
+        }
+
+        private void btnWS2_Click(object sender, EventArgs e)
+        {
+            //logic here 
+        }
+
+        private void btnERP_Click(object sender, EventArgs e)
+        {
+            //logic here 
+        }
     }
 }
