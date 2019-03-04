@@ -42,7 +42,7 @@
             this.btn_WindowsFormClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_WindowsFormClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_WindowsFormClient.ForeColor = System.Drawing.Color.White;
-            this.btn_WindowsFormClient.Location = new System.Drawing.Point(45, 173);
+            this.btn_WindowsFormClient.Location = new System.Drawing.Point(46, 134);
             this.btn_WindowsFormClient.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btn_WindowsFormClient.Name = "btn_WindowsFormClient";
             this.btn_WindowsFormClient.Size = new System.Drawing.Size(617, 38);
@@ -60,7 +60,7 @@
             this.btn_ConsoleClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ConsoleClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ConsoleClient.ForeColor = System.Drawing.Color.White;
-            this.btn_ConsoleClient.Location = new System.Drawing.Point(45, 118);
+            this.btn_ConsoleClient.Location = new System.Drawing.Point(46, 79);
             this.btn_ConsoleClient.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btn_ConsoleClient.Name = "btn_ConsoleClient";
             this.btn_ConsoleClient.Size = new System.Drawing.Size(617, 38);
@@ -78,7 +78,7 @@
             this.btn_JavaClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_JavaClient.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_JavaClient.ForeColor = System.Drawing.Color.White;
-            this.btn_JavaClient.Location = new System.Drawing.Point(45, 230);
+            this.btn_JavaClient.Location = new System.Drawing.Point(46, 191);
             this.btn_JavaClient.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btn_JavaClient.Name = "btn_JavaClient";
             this.btn_JavaClient.Size = new System.Drawing.Size(617, 38);
@@ -92,7 +92,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(301, 72);
+            this.label1.Location = new System.Drawing.Point(302, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 22);
@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 367);
+            this.ClientSize = new System.Drawing.Size(717, 274);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_JavaClient);
             this.Controls.Add(this.btn_ConsoleClient);
