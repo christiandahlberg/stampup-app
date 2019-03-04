@@ -55,7 +55,7 @@ namespace WS1_Client
             args = args.Insert(0, "-jar ");
             args += " " + FilePath;
 
-            ClientRunner.Start("java.exe", args);
+            ClientRunner.Start("javaw.exe", args);
         }
 
         private void ChooseFileButton_Click(object sender, EventArgs e)
