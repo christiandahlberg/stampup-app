@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace WS1_WindowsForms_Client
 {
-    public partial class Form1 : Form
+    public partial class WS1_WindowsForms_Client_GUI : Form
     {
         public string FilePath { get; set; }
 
-        public Form1(string filePath)
+        public WS1_WindowsForms_Client_GUI(string filePath)
         {
             FilePath = filePath;
             InitializeComponent();

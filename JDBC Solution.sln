@@ -16,8 +16,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS2_WebService", "WS2_WebService\WS2_WebService.csproj", "{39FF8DB5-2557-4042-A102-64E5B1F67068}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS1_WindowsForms_Client", "WS1_WindowsFormsClient\WS1_WindowsForms_Client.csproj", "{4E271F97-8104-4E24-9BF7-C22AE440F9C1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0920107B-4DBF-447C-B23A-F3CF1E288A89} = {0920107B-4DBF-447C-B23A-F3CF1E288A89}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS1_Console_Client", "WS1_Console_Client\WS1_Console_Client.csproj", "{AC48E643-67D7-41FC-977C-DB7A265D809F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0920107B-4DBF-447C-B23A-F3CF1E288A89} = {0920107B-4DBF-447C-B23A-F3CF1E288A89}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

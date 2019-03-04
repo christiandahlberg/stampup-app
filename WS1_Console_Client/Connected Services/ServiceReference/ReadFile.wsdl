@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="OpenFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="filePath" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpenFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpenFileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="OpenFileSoapIn">
+    <wsdl:part name="parameters" element="tns:OpenFile" />
+  </wsdl:message>
+  <wsdl:message name="OpenFileSoapOut">
+    <wsdl:part name="parameters" element="tns:OpenFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ReadFileSoap">
+    <wsdl:operation name="OpenFile">
+      <wsdl:input message="tns:OpenFileSoapIn" />
+      <wsdl:output message="tns:OpenFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReadFileSoap" type="tns:ReadFileSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OpenFile">
+      <soap:operation soapAction="http://tempuri.org/OpenFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ReadFileSoap12" type="tns:ReadFileSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OpenFile">
+      <soap12:operation soapAction="http://tempuri.org/OpenFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ReadFile">
+    <wsdl:port name="ReadFileSoap" binding="tns:ReadFileSoap">
+      <soap:address location="http://localhost:53238/ReadFile.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ReadFileSoap12" binding="tns:ReadFileSoap12">
+      <soap12:address location="http://localhost:53238/ReadFile.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

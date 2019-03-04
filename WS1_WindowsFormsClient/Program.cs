@@ -16,7 +16,7 @@ namespace WS1_WindowsForms_Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new WS1_WindowsForms_Client_GUI());
         }
     }
 }

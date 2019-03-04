@@ -1,6 +1,6 @@
 ﻿namespace WS1_WindowsForms_Client
 {
-    partial class Form1
+    partial class WS1_WindowsForms_Client_GUI
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@
             this.label1.TabIndex = 0;
 
             // Get Dynamic File name
-            WindowsFormsClient.ServiceReference.ReadFileSoapClient c = new ReadFileSoapClient();
+            WS1_WindowsForms_Client.ServiceReference.ReadFileSoapClient c = new WS1_WindowsForms_Client.ServiceReference.ReadFileSoapClient();
             this.label1.Text = c.OpenFile(FilePath);
 
             // 
@@ -49,8 +49,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Windows Forms Client";
+            this.Text = "Windows Forms Client";
             this.ResumeLayout(false);
 
         }
