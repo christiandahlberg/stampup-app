@@ -24,7 +24,7 @@ namespace MainClient
             {
                 StartInfo =
                 {
-                    FileName = "WindowsFormsClientWS2.exe"
+                    FileName = "PK1_Client.exe"
                 }
             };
 
@@ -33,7 +33,16 @@ namespace MainClient
 
         private void btnPK2_Click(object sender, EventArgs e)
         {
-            //logic here
+            Process process = new Process()
+            {
+                StartInfo =
+                {
+                    FileName = "PK2_Client.exe"
+                }
+            };
+
+            process.Start();
+
         }
 
         private void btnWS1_Click(object sender, EventArgs e)
