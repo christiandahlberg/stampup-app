@@ -39,7 +39,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS2_Console_Client", "WS2_C
 		{39FF8DB5-2557-4042-A102-64E5B1F67068} = {39FF8DB5-2557-4042-A102-64E5B1F67068}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP1_WindowsForms_Client", "ERP1_WindowsForms_Client\ERP1_WindowsForms_Client.csproj", "{10CEA2D1-1F16-458A-8666-DF224F816B4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP_WindowsForms_Client", "ERP_WindowsForms_Client\ERP_WindowsForms_Client.csproj", "{10CEA2D1-1F16-458A-8666-DF224F816B4A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{02348E50-6845-496D-B257-9E492DE500A3} = {02348E50-6845-496D-B257-9E492DE500A3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP_WebService", "ERP_WebService\ERP_WebService.csproj", "{02348E50-6845-496D-B257-9E492DE500A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +104,10 @@ Global
 		{10CEA2D1-1F16-458A-8666-DF224F816B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10CEA2D1-1F16-458A-8666-DF224F816B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10CEA2D1-1F16-458A-8666-DF224F816B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02348E50-6845-496D-B257-9E492DE500A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02348E50-6845-496D-B257-9E492DE500A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02348E50-6845-496D-B257-9E492DE500A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02348E50-6845-496D-B257-9E492DE500A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
