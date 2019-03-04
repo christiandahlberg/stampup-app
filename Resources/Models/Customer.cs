@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Resources;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Resources;
 
-namespace PK1_Client.Model
+namespace Resources.Models
 {
     public class Customer
     {
@@ -16,6 +16,8 @@ namespace PK1_Client.Model
         public string Phone { get; set; }
         public DateTime Created_at { get; set; }
         public List<Offer> offerList;
+
+        public Customer() { }
 
         // Used to create new customer. Created_at is assigned in SQL-querry
         public Customer(string name, string email, string phone, string password)

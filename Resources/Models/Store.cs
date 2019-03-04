@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PK1_Client.Model
+namespace Resources.Models
 {
     public class Store
     {
@@ -12,6 +12,8 @@ namespace PK1_Client.Model
         public string Name { get; set; }
         public string Address { get; set; }
         public DateTime Created_at { get; set; }
+
+        public Store() { }
 
         public Store(string name, string address)
         {
