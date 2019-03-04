@@ -51,7 +51,7 @@ namespace MainClient
             {
                 StartInfo =
                 {
-                    FileName = "WS1_Client"
+                    FileName = "WS1_Client.exe"
                 }
             };
 
@@ -64,7 +64,7 @@ namespace MainClient
             {
                 StartInfo =
                 {
-                    FileName = "WS2_Client"
+                    FileName = "WS2_Client.exe"
                 }
             };
 

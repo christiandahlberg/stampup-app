@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{730E9366-F2FC-4D2E-A229-0CDC4A391F1C}</ProjectGuid>
+    <ProjectGuid>{EE8B70F5-3E49-49F9-9846-58276936FE27}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MainClient</RootNamespace>
-    <AssemblyName>MainClient</AssemblyName>
+    <RootNamespace>WS2_Client</RootNamespace>
+    <AssemblyName>WS2_Client</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,17 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainClient.cs">
+    <Compile Include="WS2_Client_GUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainClient.Designer.cs">
-      <DependentUpon>MainClient.cs</DependentUpon>
+    <Compile Include="WS2_Client_GUI.Designer.cs">
+      <DependentUpon>WS2_Client_GUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainClient.resx">
-      <DependentUpon>MainClient.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,28 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PK1_Client\PK1_Client.csproj">
-      <Project>{6ec575e9-5508-41d3-b470-0f9ab737f11d}</Project>
-      <Name>PK1_Client</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PK2_Client\PK2_Client.csproj">
-      <Project>{9e93432b-5d01-4985-b3fc-88365bf50fc4}</Project>
-      <Name>PK2_Client</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WS1_Client\WS1_Client.csproj">
-      <Project>{912e451f-46a2-4db2-a4e7-60cd5d80f19e}</Project>
-      <Name>WS1_Client</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WS1_Console_Client\WS1_Console_Client.csproj">
-      <Project>{ac48e643-67d7-41fc-977c-db7a265d809f}</Project>
-      <Name>WS1_Console_Client</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WS1_WindowsFormsClient\WS1_WindowsForms_Client.csproj">
-      <Project>{4e271f97-8104-4e24-9bf7-c22ae440f9c1}</Project>
-      <Name>WS1_WindowsForms_Client</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
