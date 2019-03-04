@@ -30,7 +30,7 @@ namespace ERP_Client
                 .Parent.Parent.FullName + @"\Resources\Resources\ERP_Java_Client.jar" + "\"";
             args = args.Insert(0, "-jar ");
 
-            ClientRunner.Start("java.exe", args);
+            ClientRunner.Start("javaw.exe", args);
         }
     }
 }
