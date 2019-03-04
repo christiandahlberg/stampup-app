@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using Resources;
 
 namespace WS1_Client
 {
@@ -25,7 +26,7 @@ namespace WS1_Client
                 return;
             }
 
-            StartProcess("WS1_Console_Client.exe");
+            ClientRunner.Start("WS1_Console_Client.exe", FilePath);
         }
 
         private void WinFormsClient_Click(object sender, EventArgs e)
@@ -37,7 +38,7 @@ namespace WS1_Client
                 return;
             }
 
-            StartProcess("WS1_WindowsForms_Client.exe");
+            ClientRunner.Start("WS1_WindowsForms_Client.exe", FilePath);
         }
 
         private void JavaClient_Click(object sender, EventArgs e)
@@ -52,9 +53,9 @@ namespace WS1_Client
             string args = "\"" + Directory.GetParent(Directory.GetCurrentDirectory())
                 .Parent.Parent.FullName + @"\Resources\Resources\WS1_Java_Client.jar" + "\"";
             args = args.Insert(0, "-jar ");
+            args += " " + FilePath;
 
-            // string args = "-jar WS1_Java_Client.jar"; // "-jar ~/../../../Resources/Resources/WS1_Java_Client.jar";
-            StartProcess("java.exe", args);
+            ClientRunner.Start("java.exe", args);
         }
 
         private void ChooseFileButton_Click(object sender, EventArgs e)
@@ -77,30 +78,6 @@ namespace WS1_Client
                 }
 
             }
-        }
-
-        private void StartProcess(string clientFile, params string[] parameters)
-        {
-
-            string arguments = "";
-
-            for (int i = 0; i < parameters.Length; i++)
-            {
-                arguments += " " + parameters[i];
-            }
-
-            arguments += " " + FilePath;
-
-            Process process = new Process
-            {
-                StartInfo =
-                {
-                  FileName = clientFile,
-                  Arguments = arguments
-                }
-            };
-
-            process.Start();
         }
     }
 }

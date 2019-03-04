@@ -90,6 +90,10 @@
       <Project>{9e93432b-5d01-4985-b3fc-88365bf50fc4}</Project>
       <Name>PK2_Client</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{6e76a945-061c-4a26-85bd-14292ef8c840}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WS1_Client\WS1_Client.csproj">
       <Project>{912e451f-46a2-4db2-a4e7-60cd5d80f19e}</Project>
       <Name>WS1_Client</Name>

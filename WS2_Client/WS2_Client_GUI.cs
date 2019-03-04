@@ -3,6 +3,7 @@ using System.IO;
 using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
+using Resources;
 
 namespace WS2_Client
 {
@@ -17,32 +18,12 @@ namespace WS2_Client
 
         private void btn_ConsoleClient_Click(object sender, EventArgs e)
         {
-            Process process = new Process()
-            {
-                StartInfo =
-               {
-                   FileName = "WS2_Console_Client.exe"
-               }
-
-            };
-
-            process.Start();
-
-
+            ClientRunner.Start("WS2_Console_Client.exe");
         }
 
         private void btn_WindowsFormClient_Click(object sender, EventArgs e)
         {
-
-            Process process = new Process()
-            {
-                StartInfo =
-                {
-                    FileName = "WS2_WindowsForms_Client.exe"
-                }
-            };
-
-            process.Start();
+            ClientRunner.Start("WS2_WindowsForms_Client.exe");
         }
 
         private void btn_JavaClient_Click(object sender, EventArgs e)
@@ -51,16 +32,7 @@ namespace WS2_Client
                 .Parent.Parent.FullName + @"\Resources\Resources\WS2_Java_Client.jar" + "\"";
             args = args.Insert(0, "-jar ");
 
-            Process process = new Process()
-            {
-                StartInfo =
-                {
-                    FileName = "java.exe",
-                    Arguments = args
-                }
-            };
-
-            process.Start();
+            ClientRunner.Start("java.exe", args);
         }
     }
 }

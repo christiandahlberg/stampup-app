@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Resources;
 
 namespace MainClient
 {
@@ -20,60 +21,27 @@ namespace MainClient
 
         private void btnPK1_Click(object sender, EventArgs e)
         {
-            Process process = new Process()
-            {
-                StartInfo =
-                {
-                    FileName = "PK1_Client.exe"
-                }
-            };
-
-            process.Start();
+            ClientRunner.Start("PK1_Client.exe");
         }
 
         private void btnPK2_Click(object sender, EventArgs e)
         {
-            Process process = new Process()
-            {
-                StartInfo =
-                {
-                    FileName = "PK2_Client.exe"
-                }
-            };
-
-            process.Start();
-
+            ClientRunner.Start("PK2_Client.exe");
         }
 
         private void btnWS1_Click(object sender, EventArgs e)
         {
-            Process process = new Process()
-            {
-                StartInfo =
-                {
-                    FileName = "WS1_Client.exe"
-                }
-            };
-
-            process.Start();
+            ClientRunner.Start("WS1_Client.exe");
         }
 
         private void btnWS2_Click(object sender, EventArgs e)
         {
-            Process process = new Process()
-            {
-                StartInfo =
-                {
-                    FileName = "WS2_Client.exe"
-                }
-            };
-
-            process.Start();
+            ClientRunner.Start("WS2_Client.exe");
         }
 
         private void btnERP_Click(object sender, EventArgs e)
         {
-            //logic here 
+            //ClientRunner.Start("ERP_Client.exe");
         }
     }
 }
