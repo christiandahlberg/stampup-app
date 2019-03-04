@@ -47,12 +47,28 @@ namespace MainClient
 
         private void btnWS1_Click(object sender, EventArgs e)
         {
-            //logic here 
+            Process process = new Process()
+            {
+                StartInfo =
+                {
+                    FileName = "WS1_Client"
+                }
+            };
+
+            process.Start();
         }
 
         private void btnWS2_Click(object sender, EventArgs e)
         {
-            //logic here 
+            Process process = new Process()
+            {
+                StartInfo =
+                {
+                    FileName = "WS2_Client"
+                }
+            };
+
+            process.Start();
         }
 
         private void btnERP_Click(object sender, EventArgs e)

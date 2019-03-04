@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainClient", "MainClient\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PK1_Client", "PK1_Client\PK1_Client.csproj", "{6EC575E9-5508-41D3-B470-0F9AB737F11D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{6E76A945-061C-4A26-85BD-14292EF8C840}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resourcess\Resources.csproj", "{6E76A945-061C-4A26-85BD-14292EF8C840}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PK2_Client", "PK2_Client\PK2_Client.csproj", "{9E93432B-5D01-4985-B3FC-88365BF50FC4}"
 EndProject
@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS1_Console_Client", "WS1_C
 	ProjectSection(ProjectDependencies) = postProject
 		{0920107B-4DBF-447C-B23A-F3CF1E288A89} = {0920107B-4DBF-447C-B23A-F3CF1E288A89}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS1_Client", "WS1_Client\WS1_Client.csproj", "{912E451F-46A2-4DB2-A4E7-60CD5D80F19E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{AC48E643-67D7-41FC-977C-DB7A265D809F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC48E643-67D7-41FC-977C-DB7A265D809F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC48E643-67D7-41FC-977C-DB7A265D809F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{912E451F-46A2-4DB2-A4E7-60CD5D80F19E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912E451F-46A2-4DB2-A4E7-60CD5D80F19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912E451F-46A2-4DB2-A4E7-60CD5D80F19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912E451F-46A2-4DB2-A4E7-60CD5D80F19E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
