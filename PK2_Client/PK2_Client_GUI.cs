@@ -11,11 +11,11 @@ using Resources;
 
 namespace PK2_Client
 {
-    public partial class View : Form
+    public partial class PK2_Client_GUI : Form
     {
         private Controller controller;
 
-        public View(Controller controller)
+        public PK2_Client_GUI(Controller controller)
         {
             this.controller = controller;
             InitializeComponent();
