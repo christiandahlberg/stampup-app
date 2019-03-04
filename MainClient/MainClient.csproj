@@ -78,5 +78,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PK1_Client\PK1_Client.csproj">
+      <Project>{6ec575e9-5508-41d3-b470-0f9ab737f11d}</Project>
+      <Name>PK1_Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PK2_Client\PK2_Client.csproj">
+      <Project>{9e93432b-5d01-4985-b3fc-88365bf50fc4}</Project>
+      <Name>PK2_Client</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
