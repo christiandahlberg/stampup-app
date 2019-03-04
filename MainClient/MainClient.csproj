@@ -87,6 +87,18 @@
       <Project>{9e93432b-5d01-4985-b3fc-88365bf50fc4}</Project>
       <Name>PK2_Client</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WS1_Client\WS1_Client.csproj">
+      <Project>{912e451f-46a2-4db2-a4e7-60cd5d80f19e}</Project>
+      <Name>WS1_Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WS1_Console_Client\WS1_Console_Client.csproj">
+      <Project>{ac48e643-67d7-41fc-977c-db7a265d809f}</Project>
+      <Name>WS1_Console_Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WS1_WindowsFormsClient\WS1_WindowsForms_Client.csproj">
+      <Project>{4e271f97-8104-4e24-9bf7-c22ae440f9c1}</Project>
+      <Name>WS1_WindowsForms_Client</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
