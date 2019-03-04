@@ -43,13 +43,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientRunner.cs" />
+    <Compile Include="DAL\CronusDAL.cs" />
     <Compile Include="DAL\CustomerDAL.cs" />
+    <Compile Include="DAL\EmployeeDAL.cs" />
     <Compile Include="DAL\OfferDAL.cs" />
     <Compile Include="DAL\StoreDAL.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="ExceptionHandler.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\MetadataItem.cs" />
     <Compile Include="Models\Offer.cs" />
+    <Compile Include="Models\Relative.cs" />
     <Compile Include="Models\Store.cs" />
     <Compile Include="Models\Subscription.cs" />
     <Compile Include="PasswordHasher.cs" />
