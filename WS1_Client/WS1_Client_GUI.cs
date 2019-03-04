@@ -25,7 +25,7 @@ namespace WS1_Client
                 return;
             }
 
-            StartProcess("ConsoleClient.exe");
+            StartProcess("WS1_Console_Client.exe");
         }
 
         private void WinFormsClient_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace WS1_Client
                 return;
             }
 
-            StartProcess("WindowsFormsClient.exe");
+            StartProcess("WS1_WindowsForms_Client.exe");
         }
 
         private void JavaClient_Click(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace WS1_Client
                 return;
             }
 
-            string args = "-jar ~/../../../Resources/JavaClient_WS1.jar";
+            string args = "-jar ~/../../../Resources/WS1_Java_Client.jar";
             StartProcess("java.exe", args);
         }
 
