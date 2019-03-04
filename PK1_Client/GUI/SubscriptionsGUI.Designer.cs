@@ -101,7 +101,7 @@
             this.dgv_Offers.RowTemplate.DividerHeight = 2;
             this.dgv_Offers.RowTemplate.Height = 24;
             this.dgv_Offers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgv_Offers.Size = new System.Drawing.Size(562, 164);
+            this.dgv_Offers.Size = new System.Drawing.Size(562, 228);
             this.dgv_Offers.TabIndex = 10;
             this.dgv_Offers.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.subscribed_CellMouseUp);
             this.dgv_Offers.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.subscribed_CellValueChanged);
@@ -136,7 +136,7 @@
             // 
             this.lbl_SystemMessage.AutoSize = true;
             this.lbl_SystemMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SystemMessage.Location = new System.Drawing.Point(27, 297);
+            this.lbl_SystemMessage.Location = new System.Drawing.Point(27, 354);
             this.lbl_SystemMessage.Name = "lbl_SystemMessage";
             this.lbl_SystemMessage.Size = new System.Drawing.Size(0, 17);
             this.lbl_SystemMessage.TabIndex = 11;
@@ -145,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 335);
+            this.ClientSize = new System.Drawing.Size(625, 396);
             this.Controls.Add(this.lbl_SystemMessage);
             this.Controls.Add(this.dgv_Offers);
             this.Controls.Add(this.comboBox_Store);
