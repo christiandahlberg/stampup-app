@@ -22,7 +22,6 @@ namespace WS1_WebService
         [WebMethod]
         public string OpenFile(string filePath)
         {
-
             try
             {   // Open the text file using a stream reader.
                 using (StreamReader sr = new StreamReader(filePath, Encoding.Default, true))
@@ -35,6 +34,7 @@ namespace WS1_WebService
             {
                 return "The file could not be read:\n" + e.Message;
             }
+            
         }
     }
 }
