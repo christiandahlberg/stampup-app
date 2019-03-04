@@ -151,7 +151,6 @@ namespace PK1_Client.GUI
                             SetSystemMessage("Successfully subscribed.");
                         }
                     }
-
                 }
                 else
                 {

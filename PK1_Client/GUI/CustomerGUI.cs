@@ -36,8 +36,6 @@ namespace PK1_Client
 
         private void CustomerLogOut(object sender, EventArgs e)
         {
-            // Byter bara till LoginGUI
-            // TODO: Logga ut på riktigt? Någon funktionalitet som saknas?
             Hide();
             var login = new LoginGUI();
             login.Closed += (s, args) => this.Close();

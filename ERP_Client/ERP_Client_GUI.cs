@@ -19,12 +19,12 @@ namespace ERP_Client
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void windowsFormsClient_Click(object sender, EventArgs e)
         {
             ClientRunner.Start("ERP_WindowsForms_Client.exe");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void javaClient_Click(object sender, EventArgs e)
         {
             string args = "\"" + Directory.GetParent(Directory.GetCurrentDirectory())
                 .Parent.Parent.FullName + @"\Resources\Resources\ERP_Java_Client.jar" + "\"";

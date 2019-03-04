@@ -44,7 +44,7 @@
             this.btnPK1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPK1.ForeColor = System.Drawing.Color.White;
-            this.btnPK1.Location = new System.Drawing.Point(40, 110);
+            this.btnPK1.Location = new System.Drawing.Point(38, 76);
             this.btnPK1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnPK1.Name = "btnPK1";
             this.btnPK1.Size = new System.Drawing.Size(656, 38);
@@ -62,7 +62,7 @@
             this.btnPK2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPK2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPK2.ForeColor = System.Drawing.Color.White;
-            this.btnPK2.Location = new System.Drawing.Point(40, 163);
+            this.btnPK2.Location = new System.Drawing.Point(38, 129);
             this.btnPK2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnPK2.Name = "btnPK2";
             this.btnPK2.Size = new System.Drawing.Size(656, 38);
@@ -80,7 +80,7 @@
             this.btnWS1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWS1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWS1.ForeColor = System.Drawing.Color.White;
-            this.btnWS1.Location = new System.Drawing.Point(40, 216);
+            this.btnWS1.Location = new System.Drawing.Point(38, 182);
             this.btnWS1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnWS1.Name = "btnWS1";
             this.btnWS1.Size = new System.Drawing.Size(656, 38);
@@ -98,7 +98,7 @@
             this.btnWS2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWS2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWS2.ForeColor = System.Drawing.Color.White;
-            this.btnWS2.Location = new System.Drawing.Point(40, 268);
+            this.btnWS2.Location = new System.Drawing.Point(38, 234);
             this.btnWS2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnWS2.Name = "btnWS2";
             this.btnWS2.Size = new System.Drawing.Size(656, 38);
@@ -116,7 +116,7 @@
             this.btnERP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnERP.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnERP.ForeColor = System.Drawing.Color.White;
-            this.btnERP.Location = new System.Drawing.Point(40, 321);
+            this.btnERP.Location = new System.Drawing.Point(38, 287);
             this.btnERP.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnERP.Name = "btnERP";
             this.btnERP.Size = new System.Drawing.Size(656, 38);
@@ -130,18 +130,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(280, 65);
+            this.label1.Location = new System.Drawing.Point(34, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 22);
+            this.label1.Size = new System.Drawing.Size(173, 22);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Choose an assignment";
+            this.label1.Text = "Choose an assignment:";
             // 
             // MainClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 418);
+            this.ClientSize = new System.Drawing.Size(736, 366);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnERP);
             this.Controls.Add(this.btnWS2);

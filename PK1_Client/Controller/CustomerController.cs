@@ -17,7 +17,7 @@ namespace PK1_Client.Controller
         {
             customerDAL = new CustomerDAL();
         }
-
+        
         public Boolean CreateCustomer(string name, string email, string phone, string password)
         {
             if (!CustomerAlreadyExists(email))
@@ -29,8 +29,7 @@ namespace PK1_Client.Controller
                 return false;
             }
         }
-
-        // Removes customer and its subscriptions.
+        
         public Boolean RemoveCustomer(int cId)
         {
             OfferController c = new OfferController();
@@ -42,14 +41,12 @@ namespace PK1_Client.Controller
             }
             return customerDAL.RemoveCustomer(cId);
         }
-
-        // Update with new password
+        
         public Boolean UpdateCustomer(int id, string name, string email, string phone, string password)
         {
             return customerDAL.UpdateCustomer(id, name, email, phone, password);
         }
-
-        // Update without changing password
+        
         public Boolean UpdateCustomer(int id, string name, string email, string phone)
         {
             return customerDAL.UpdateCustomer(id, name, email, phone);

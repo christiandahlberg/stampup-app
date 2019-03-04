@@ -131,14 +131,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 18);
+            this.label1.Size = new System.Drawing.Size(122, 17);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Choose a table";
+            this.label1.Text = "Choose a table:";
             // 
-            // View
+            // PK2_Client_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -151,7 +151,7 @@
             this.Controls.Add(this.lbl_Table);
             this.Controls.Add(this.btn_Select);
             this.Controls.Add(this.cb_Tables);
-            this.Name = "View";
+            this.Name = "PK2_Client_GUI";
             this.Text = "Programkonstruktion 2";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ResultTable)).EndInit();
             this.ResumeLayout(false);

@@ -18,7 +18,6 @@ namespace Resources
         // (xxx) xxx-xxxx
         // xxxxxxxxxx
         // xxx-xxx-xxxxx
-        // TODO: Add +xxx-xxx xx xx 
         public static Boolean IsValidPhone(string number)
         {
             bool isPhonenumber = false;
