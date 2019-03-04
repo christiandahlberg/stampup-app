@@ -46,6 +46,7 @@
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Offer.cs" />
     <Compile Include="Models\Store.cs" />
+    <Compile Include="Models\Subscription.cs" />
     <Compile Include="PasswordHasher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

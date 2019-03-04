@@ -12,11 +12,11 @@ namespace WS1_WindowsForms_Client
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WS1_WindowsForms_Client_GUI());
+            Application.Run(new WS1_WindowsForms_Client_GUI(args[0]));
         }
     }
 }
