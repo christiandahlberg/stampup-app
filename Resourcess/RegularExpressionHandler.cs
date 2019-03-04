@@ -9,7 +9,7 @@ namespace Resources
 
 {
     // regexhandler ska användas av view till att kontrollera att inmatade värden är riktiga. 
-    class RegularExpressionHandler
+    public class RegularExpressionHandler
     {
         // Checks phone number input format using regular expressions. Current allowed formats:
         // (xxx)xxxxxxx

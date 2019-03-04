@@ -6,7 +6,6 @@ using System.Windows.Forms;
 using PK1_Client.DAL;
 using PK1_Client.GUI;
 using PK1_Client.Model;
-using PK1_Client.Utility;
 
 namespace PK1_Client
 {

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace MainClient
 {
-    public partial class Form1 : Form
+    public partial class MainClient : Form
     {
-        public Form1()
+        public MainClient()
         {
             InitializeComponent();
         }

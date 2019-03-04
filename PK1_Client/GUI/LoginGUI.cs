@@ -1,5 +1,4 @@
 ﻿using PK1_Client.Controller;
-using PK1_Client.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Resources;
 
 namespace PK1_Client.GUI
 {

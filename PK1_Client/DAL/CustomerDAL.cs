@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using PK1_Client.Model;
-using PK1_Client.Utility;
+using Resources;
 
 
 namespace PK1_Client.DAL

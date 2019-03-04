@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using Resources;
 
 namespace PK1_Client
 {
@@ -34,8 +35,7 @@ namespace PK1_Client
             }
             catch (SqlException e)
             {
-                Console.WriteLine(e);
-                // ExceptionHandler.HandleErrorException(e);
+                ExceptionHandler.HandleErrorException(e);
             }
         }
 

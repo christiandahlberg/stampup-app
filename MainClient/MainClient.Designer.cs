@@ -1,6 +1,6 @@
 ﻿namespace MainClient
 {
-    partial class Form1
+    partial class MainClient
     {
         /// <summary>
         /// Required designer variable.

@@ -9,9 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PK1_Client.Model;
 using PK1_Client.Controller;
-using PK1_Client.Utility;
-using Resources;
 using PK1_Client.GUI;
+using Resources;
 
 namespace PK1_Client
 {
