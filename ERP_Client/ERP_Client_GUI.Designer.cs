@@ -28,50 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnJavaClient = new System.Windows.Forms.Button();
-            this.btnWindowsForms = new System.Windows.Forms.Button();
-            this.Ch = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnJavaClient
+            // label1
             // 
-            this.btnJavaClient.Location = new System.Drawing.Point(38, 161);
-            this.btnJavaClient.Name = "btnJavaClient";
-            this.btnJavaClient.Size = new System.Drawing.Size(372, 23);
-            this.btnJavaClient.TabIndex = 0;
-            this.btnJavaClient.Text = "Java Client";
-            this.btnJavaClient.UseVisualStyleBackColor = true;
-            this.btnJavaClient.Click += new System.EventHandler(this.btnJavaClient_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(198, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Choose client";
             // 
-            // btnWindowsForms
+            // button1
             // 
-            this.btnWindowsForms.Location = new System.Drawing.Point(38, 116);
-            this.btnWindowsForms.Name = "btnWindowsForms";
-            this.btnWindowsForms.Size = new System.Drawing.Size(372, 23);
-            this.btnWindowsForms.TabIndex = 1;
-            this.btnWindowsForms.Text = "Windows Forms Client";
-            this.btnWindowsForms.UseVisualStyleBackColor = true;
-            this.btnWindowsForms.Click += new System.EventHandler(this.btnWindowsForms_Click);
+            this.button1.Location = new System.Drawing.Point(52, 166);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(365, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Java Client";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Ch
+            // button2
             // 
-            this.Ch.AutoSize = true;
-            this.Ch.Location = new System.Drawing.Point(186, 52);
-            this.Ch.Name = "Ch";
-            this.Ch.Size = new System.Drawing.Size(71, 13);
-            this.Ch.TabIndex = 2;
-            this.Ch.Text = "Choose client";
+            this.button2.Location = new System.Drawing.Point(52, 117);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(365, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Windows Forms Client";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ERP_Client_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 267);
-            this.Controls.Add(this.Ch);
-            this.Controls.Add(this.btnWindowsForms);
-            this.Controls.Add(this.btnJavaClient);
+            this.ClientSize = new System.Drawing.Size(470, 299);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Name = "ERP_Client_GUI";
-            this.Text = "Form1";
+            this.Text = "ERP Client";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,9 +79,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnJavaClient;
-        private System.Windows.Forms.Button btnWindowsForms;
-        private System.Windows.Forms.Label Ch;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
