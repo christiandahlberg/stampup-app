@@ -86,6 +86,10 @@
       <Project>{c0c7095b-f7e3-418c-b8e4-ddcb1f21713a}</Project>
       <Name>ERP_Client</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ERP_WindowsForms_Client\ERP_WindowsForms_Client.csproj">
+      <Project>{10cea2d1-1f16-458a-8666-df224f816b4a}</Project>
+      <Name>ERP_WindowsForms_Client</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PK1_Client\PK1_Client.csproj">
       <Project>{6ec575e9-5508-41d3-b470-0f9ab737f11d}</Project>
       <Name>PK1_Client</Name>
