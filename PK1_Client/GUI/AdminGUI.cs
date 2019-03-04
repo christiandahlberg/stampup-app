@@ -285,7 +285,7 @@ namespace PK1_Client
         }
 
         /// <summary>
-        /// Deletes Store
+        /// Deletes Store or Offer depending on what choice
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -304,13 +304,13 @@ namespace PK1_Client
                 }
                 else
                 {
-                    SetStoreSystemMessage("ERROR: Store was not updated.");
+                    SetStoreSystemMessage("Store was not updated.");
                 }
             }
 
             if (panel_Offers.Visible == true)
             {
-                DialogResult dialog = MessageBox.Show("Are you sure you want to update offer?", "Update offer?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                DialogResult dialog = MessageBox.Show("Are you sure you want to delete offer?", "Delete offer", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 int offer_id = (int)dgv_Offers.Rows[dgv_Offers.CurrentCell.RowIndex].Cells[0].Value;
 
                 if (dialog == DialogResult.OK)
@@ -321,7 +321,7 @@ namespace PK1_Client
                 }
                 else
                 {
-                    SetStoreSystemMessage("ERROR: Offer was not deleted.");
+                    SetStoreSystemMessage("Offer was not deleted.");
                 }
             }
             UpdateTableContent();
