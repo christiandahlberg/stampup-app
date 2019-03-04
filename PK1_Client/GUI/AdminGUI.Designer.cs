@@ -595,7 +595,7 @@
             this.btn_StoreOfferDelete.TabStop = false;
             this.btn_StoreOfferDelete.Text = "Delete";
             this.btn_StoreOfferDelete.UseVisualStyleBackColor = false;
-            this.btn_StoreOfferDelete.Click += new System.EventHandler(this.StoreDelete);
+            this.btn_StoreOfferDelete.Click += new System.EventHandler(this.DeleteStoreOrOffer);
             // 
             // btn_StoreOfferUpdate
             // 

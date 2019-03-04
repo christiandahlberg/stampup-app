@@ -289,15 +289,51 @@ namespace PK1_Client
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void StoreDelete(object sender, EventArgs e)
+        private void DeleteStoreOrOffer(object sender, EventArgs e)
         {
-            // TODO: "Are you sure?"
+            if (panel_Stores.Visible == true)
+            {
+                DialogResult dialog = MessageBox.Show("Are you sure you want to delete store?", "Delete store", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                int store_id = (int)dgv_Stores.Rows[dgv_Stores.CurrentCell.RowIndex].Cells[0].Value;
 
-            int sId = (int)dgv_Stores.Rows[dgv_Stores.CurrentCell.RowIndex].Cells[0].Value;
+                if (dialog == DialogResult.OK)
+                {
+                    storeController.RemoveStore(store_id);
+                    SetStoreSystemMessage("Store successfully deleted!");
+                    ClearOfferTextFields();
+                }
+                else
+                {
+                    SetStoreSystemMessage("ERROR: Store was not updated.");
+                }
+            }
 
-            storeController.RemoveStore(sId);
+            if (panel_Offers.Visible == true)
+            {
+                DialogResult dialog = MessageBox.Show("Are you sure you want to update offer?", "Update offer?", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                int offer_id = (int)dgv_Offers.Rows[dgv_Offers.CurrentCell.RowIndex].Cells[0].Value;
 
+                if (dialog == DialogResult.OK)
+                {
+                    offerController.RemoveOffer(offer_id);
+                    SetStoreSystemMessage("Offer successfully deleted!");
+                    ClearOfferTextFields();
+                }
+                else
+                {
+                    SetStoreSystemMessage("ERROR: Offer was not deleted.");
+                }
+            }
             UpdateTableContent();
+        }
+
+        private void ClearOfferTextFields()
+        {
+            tb_offerName.Clear();
+            tb_offerDesc.Clear();
+            tb_offerStampGoal.Clear();
+            tb_StoreAddress.Clear();
+            tb_StoreName.Clear();
         }
 
         // ---------------------------------------------------------------------------
@@ -433,7 +469,5 @@ namespace PK1_Client
                 dgv_Offers.Rows.Add(offer.ID, offer.Name, offer.Description, offer.Store.Name, offer.Created_at.ToString());
             }
         }
-
-
     }
 }

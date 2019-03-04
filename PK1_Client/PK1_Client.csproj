@@ -101,6 +101,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="GUI\AdminGUI.resx">
+      <DependentUpon>AdminGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\LoginGUI.resx">
       <DependentUpon>LoginGUI.cs</DependentUpon>
     </EmbeddedResource>
