@@ -64,6 +64,7 @@ namespace WS1_Client
             {
                 FilePath = openFileDialog1.FileName;
                 string ext = Path.GetExtension(FilePath);
+                // FilePath = FilePath.Replace(" ", "%20");
 
                 if (ext != ".txt")
                 {
