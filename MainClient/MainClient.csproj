@@ -82,6 +82,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ERP_Client\ERP_Client.csproj">
+      <Project>{c0c7095b-f7e3-418c-b8e4-ddcb1f21713a}</Project>
+      <Name>ERP_Client</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PK1_Client\PK1_Client.csproj">
       <Project>{6ec575e9-5508-41d3-b470-0f9ab737f11d}</Project>
       <Name>PK1_Client</Name>

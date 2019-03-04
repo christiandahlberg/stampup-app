@@ -21,8 +21,7 @@ namespace ERP_Client
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ClientRunner.Start("ERP1_WindowsForm_Client.exe");
-
+            ClientRunner.Start("ERP_WindowsForms_Client.exe");
         }
 
         private void button1_Click(object sender, EventArgs e)
