@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WindowsFormsClientERP1.ServiceReference;
+using ERP_WindowsForms_Client.ServiceReference;
 
-namespace WindowsFormsClientERP1
+namespace ERP_WindowsForms_Client
 {
 
     class Controller
     {
-        private WindowsFormsClientERP1.ServiceReference.CronusSoapClient proxy;
+        private ERP_WindowsForms_Client.ServiceReference.CronusSoapClient proxy;
 
         public Controller()
         {
-            proxy = new WindowsFormsClientERP1.ServiceReference.CronusSoapClient();
+            proxy = new ERP_WindowsForms_Client.ServiceReference.CronusSoapClient();
         }
 
         public List<Employee> GetEmployees()

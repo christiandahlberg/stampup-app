@@ -41,7 +41,7 @@ namespace MainClient
 
         private void btnERP_Click(object sender, EventArgs e)
         {
-            //ClientRunner.Start("ERP_Client.exe");
+            ClientRunner.Start("ERP_Client.exe");
         }
     }
 }

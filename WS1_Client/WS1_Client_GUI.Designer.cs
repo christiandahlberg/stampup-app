@@ -94,10 +94,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(55, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 17);
+            this.label1.Size = new System.Drawing.Size(216, 22);
             this.label1.TabIndex = 4;
             this.label1.Text = "Upload file and choose client:";
             // 
@@ -134,7 +134,7 @@
             this.label2.TabIndex = 6;
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Form1
+            // WS1_Client_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -145,8 +145,8 @@
             this.Controls.Add(this.btnJavaClient);
             this.Controls.Add(this.btnWindowsFormsClient);
             this.Controls.Add(this.btnConsoleClient);
-            this.Name = "Form1";
-            this.Text = "Read file";
+            this.Name = "WS1_Client_GUI";
+            this.Text = "Web Service 1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
