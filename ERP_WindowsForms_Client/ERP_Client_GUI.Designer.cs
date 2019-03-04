@@ -99,7 +99,7 @@
             this.dgv_Employee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Employee.Size = new System.Drawing.Size(905, 327);
             this.dgv_Employee.TabIndex = 0;
-            this.dgv_Employee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Employee_CellContentClick);
+            this.dgv_Employee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Employee_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -492,6 +492,7 @@
             this.btn_getEmpRelatives.TabIndex = 33;
             this.btn_getEmpRelatives.Text = "Get employee relatives";
             this.btn_getEmpRelatives.UseVisualStyleBackColor = false;
+            this.btn_getEmpRelatives.Click += new System.EventHandler(this.btn_getEmpRelatives_Click);
             // 
             // lbl_metadata
             // 

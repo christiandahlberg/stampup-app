@@ -102,10 +102,10 @@
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.ItemSize = new System.Drawing.Size(100, 30);
             this.tabControl1.Location = new System.Drawing.Point(0, 2);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(796, 621);
+            this.tabControl1.Size = new System.Drawing.Size(597, 505);
             this.tabControl1.TabIndex = 0;
             // 
             // customersPage
@@ -126,10 +126,10 @@
             this.customersPage.Controls.Add(this.btn_CustCreate);
             this.customersPage.Controls.Add(this.dgv_Customers);
             this.customersPage.Location = new System.Drawing.Point(4, 34);
-            this.customersPage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customersPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.customersPage.Name = "customersPage";
-            this.customersPage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.customersPage.Size = new System.Drawing.Size(788, 583);
+            this.customersPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customersPage.Size = new System.Drawing.Size(589, 467);
             this.customersPage.TabIndex = 0;
             this.customersPage.Text = "   Customers   ";
             this.customersPage.UseVisualStyleBackColor = true;
@@ -142,10 +142,10 @@
             this.btn_ClearTB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ClearTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ClearTB.ForeColor = System.Drawing.Color.White;
-            this.btn_ClearTB.Location = new System.Drawing.Point(553, 196);
-            this.btn_ClearTB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_ClearTB.Location = new System.Drawing.Point(415, 159);
+            this.btn_ClearTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_ClearTB.Name = "btn_ClearTB";
-            this.btn_ClearTB.Size = new System.Drawing.Size(209, 31);
+            this.btn_ClearTB.Size = new System.Drawing.Size(157, 25);
             this.btn_ClearTB.TabIndex = 10;
             this.btn_ClearTB.TabStop = false;
             this.btn_ClearTB.Text = "Clear text fields";
@@ -154,19 +154,20 @@
             // 
             // tb_CustPassword
             // 
-            this.tb_CustPassword.Location = new System.Drawing.Point(619, 151);
-            this.tb_CustPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_CustPassword.Location = new System.Drawing.Point(464, 123);
+            this.tb_CustPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_CustPassword.Name = "tb_CustPassword";
             this.tb_CustPassword.PasswordChar = '*';
-            this.tb_CustPassword.Size = new System.Drawing.Size(143, 22);
+            this.tb_CustPassword.Size = new System.Drawing.Size(108, 19);
             this.tb_CustPassword.TabIndex = 9;
             // 
             // lbl_CustPassword
             // 
             this.lbl_CustPassword.AutoSize = true;
-            this.lbl_CustPassword.Location = new System.Drawing.Point(551, 154);
+            this.lbl_CustPassword.Location = new System.Drawing.Point(413, 125);
+            this.lbl_CustPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_CustPassword.Name = "lbl_CustPassword";
-            this.lbl_CustPassword.Size = new System.Drawing.Size(53, 17);
+            this.lbl_CustPassword.Size = new System.Drawing.Size(43, 13);
             this.lbl_CustPassword.TabIndex = 8;
             this.lbl_CustPassword.Text = "Passw";
             // 
@@ -178,10 +179,10 @@
             this.btn_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Logout.ForeColor = System.Drawing.Color.White;
-            this.btn_Logout.Location = new System.Drawing.Point(553, 532);
-            this.btn_Logout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Logout.Location = new System.Drawing.Point(415, 432);
+            this.btn_Logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Logout.Name = "btn_Logout";
-            this.btn_Logout.Size = new System.Drawing.Size(209, 31);
+            this.btn_Logout.Size = new System.Drawing.Size(157, 25);
             this.btn_Logout.TabIndex = 0;
             this.btn_Logout.TabStop = false;
             this.btn_Logout.Text = "LOG OUT";
@@ -192,59 +193,63 @@
             // 
             this.lbl_CustSystemMessage.AutoSize = true;
             this.lbl_CustSystemMessage.ForeColor = System.Drawing.Color.Black;
-            this.lbl_CustSystemMessage.Location = new System.Drawing.Point(24, 543);
+            this.lbl_CustSystemMessage.Location = new System.Drawing.Point(18, 441);
+            this.lbl_CustSystemMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_CustSystemMessage.Name = "lbl_CustSystemMessage";
-            this.lbl_CustSystemMessage.Size = new System.Drawing.Size(0, 17);
+            this.lbl_CustSystemMessage.Size = new System.Drawing.Size(0, 13);
             this.lbl_CustSystemMessage.TabIndex = 7;
             // 
             // tb_CustPhone
             // 
-            this.tb_CustPhone.Location = new System.Drawing.Point(619, 111);
-            this.tb_CustPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_CustPhone.Location = new System.Drawing.Point(464, 90);
+            this.tb_CustPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_CustPhone.Name = "tb_CustPhone";
-            this.tb_CustPhone.Size = new System.Drawing.Size(144, 22);
+            this.tb_CustPhone.Size = new System.Drawing.Size(109, 19);
             this.tb_CustPhone.TabIndex = 6;
             // 
             // tb_CustMail
             // 
-            this.tb_CustMail.Location = new System.Drawing.Point(619, 70);
-            this.tb_CustMail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_CustMail.Location = new System.Drawing.Point(464, 57);
+            this.tb_CustMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_CustMail.Name = "tb_CustMail";
-            this.tb_CustMail.Size = new System.Drawing.Size(144, 22);
+            this.tb_CustMail.Size = new System.Drawing.Size(109, 19);
             this.tb_CustMail.TabIndex = 5;
             // 
             // tb_CustName
             // 
-            this.tb_CustName.Location = new System.Drawing.Point(619, 33);
-            this.tb_CustName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_CustName.Location = new System.Drawing.Point(464, 27);
+            this.tb_CustName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_CustName.Name = "tb_CustName";
-            this.tb_CustName.Size = new System.Drawing.Size(144, 22);
+            this.tb_CustName.Size = new System.Drawing.Size(109, 19);
             this.tb_CustName.TabIndex = 4;
             // 
             // lbl_CustPhone
             // 
             this.lbl_CustPhone.AutoSize = true;
-            this.lbl_CustPhone.Location = new System.Drawing.Point(551, 114);
+            this.lbl_CustPhone.Location = new System.Drawing.Point(413, 93);
+            this.lbl_CustPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_CustPhone.Name = "lbl_CustPhone";
-            this.lbl_CustPhone.Size = new System.Drawing.Size(54, 17);
+            this.lbl_CustPhone.Size = new System.Drawing.Size(43, 13);
             this.lbl_CustPhone.TabIndex = 3;
             this.lbl_CustPhone.Text = "Phone";
             // 
             // lbl_CustMail
             // 
             this.lbl_CustMail.AutoSize = true;
-            this.lbl_CustMail.Location = new System.Drawing.Point(551, 70);
+            this.lbl_CustMail.Location = new System.Drawing.Point(413, 57);
+            this.lbl_CustMail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_CustMail.Name = "lbl_CustMail";
-            this.lbl_CustMail.Size = new System.Drawing.Size(53, 17);
+            this.lbl_CustMail.Size = new System.Drawing.Size(41, 13);
             this.lbl_CustMail.TabIndex = 2;
             this.lbl_CustMail.Text = "E-mail";
             // 
             // lbl_CustName
             // 
             this.lbl_CustName.AutoSize = true;
-            this.lbl_CustName.Location = new System.Drawing.Point(551, 36);
+            this.lbl_CustName.Location = new System.Drawing.Point(413, 29);
+            this.lbl_CustName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_CustName.Name = "lbl_CustName";
-            this.lbl_CustName.Size = new System.Drawing.Size(49, 17);
+            this.lbl_CustName.Size = new System.Drawing.Size(39, 13);
             this.lbl_CustName.TabIndex = 1;
             this.lbl_CustName.Text = "Name";
             // 
@@ -256,10 +261,10 @@
             this.btn_CustDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CustDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CustDelete.ForeColor = System.Drawing.Color.White;
-            this.btn_CustDelete.Location = new System.Drawing.Point(553, 337);
-            this.btn_CustDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_CustDelete.Location = new System.Drawing.Point(415, 274);
+            this.btn_CustDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_CustDelete.Name = "btn_CustDelete";
-            this.btn_CustDelete.Size = new System.Drawing.Size(209, 31);
+            this.btn_CustDelete.Size = new System.Drawing.Size(157, 25);
             this.btn_CustDelete.TabIndex = 0;
             this.btn_CustDelete.TabStop = false;
             this.btn_CustDelete.Text = "Delete";
@@ -274,10 +279,10 @@
             this.btn_CustUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CustUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CustUpdate.ForeColor = System.Drawing.Color.White;
-            this.btn_CustUpdate.Location = new System.Drawing.Point(553, 290);
-            this.btn_CustUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_CustUpdate.Location = new System.Drawing.Point(415, 236);
+            this.btn_CustUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_CustUpdate.Name = "btn_CustUpdate";
-            this.btn_CustUpdate.Size = new System.Drawing.Size(209, 31);
+            this.btn_CustUpdate.Size = new System.Drawing.Size(157, 25);
             this.btn_CustUpdate.TabIndex = 0;
             this.btn_CustUpdate.TabStop = false;
             this.btn_CustUpdate.Text = "Update";
@@ -292,10 +297,10 @@
             this.btn_CustCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CustCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CustCreate.ForeColor = System.Drawing.Color.White;
-            this.btn_CustCreate.Location = new System.Drawing.Point(553, 244);
-            this.btn_CustCreate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_CustCreate.Location = new System.Drawing.Point(415, 198);
+            this.btn_CustCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_CustCreate.Name = "btn_CustCreate";
-            this.btn_CustCreate.Size = new System.Drawing.Size(209, 31);
+            this.btn_CustCreate.Size = new System.Drawing.Size(157, 25);
             this.btn_CustCreate.TabIndex = 0;
             this.btn_CustCreate.TabStop = false;
             this.btn_CustCreate.Text = "Create";
@@ -316,14 +321,14 @@
             this.c_CustMail,
             this.c_CustPhone,
             this.c_CustTime});
-            this.dgv_Customers.Location = new System.Drawing.Point(27, 34);
-            this.dgv_Customers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_Customers.Location = new System.Drawing.Point(20, 28);
+            this.dgv_Customers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_Customers.Name = "dgv_Customers";
             this.dgv_Customers.ReadOnly = true;
             this.dgv_Customers.RowHeadersVisible = false;
             this.dgv_Customers.RowTemplate.Height = 24;
             this.dgv_Customers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Customers.Size = new System.Drawing.Size(491, 474);
+            this.dgv_Customers.Size = new System.Drawing.Size(368, 385);
             this.dgv_Customers.TabIndex = 0;
             this.dgv_Customers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomerSelectedRowDataHandler);
             // 
@@ -376,10 +381,10 @@
             this.storesPage.Controls.Add(this.btn_StoreCreate);
             this.storesPage.Controls.Add(this.dgv_Stores);
             this.storesPage.Location = new System.Drawing.Point(4, 34);
-            this.storesPage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.storesPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.storesPage.Name = "storesPage";
-            this.storesPage.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.storesPage.Size = new System.Drawing.Size(788, 583);
+            this.storesPage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.storesPage.Size = new System.Drawing.Size(589, 467);
             this.storesPage.TabIndex = 1;
             this.storesPage.Text = "   Stores   ";
             this.storesPage.UseVisualStyleBackColor = true;
@@ -392,10 +397,10 @@
             this.btn_Subscriptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Subscriptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Subscriptions.ForeColor = System.Drawing.Color.White;
-            this.btn_Subscriptions.Location = new System.Drawing.Point(172, 533);
-            this.btn_Subscriptions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Subscriptions.Location = new System.Drawing.Point(129, 433);
+            this.btn_Subscriptions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Subscriptions.Name = "btn_Subscriptions";
-            this.btn_Subscriptions.Size = new System.Drawing.Size(229, 31);
+            this.btn_Subscriptions.Size = new System.Drawing.Size(172, 25);
             this.btn_Subscriptions.TabIndex = 0;
             this.btn_Subscriptions.TabStop = false;
             this.btn_Subscriptions.Text = "Manage Subscriptions";
@@ -405,9 +410,10 @@
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(532, 412);
+            this.label1.Location = new System.Drawing.Point(399, 335);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 3);
+            this.label1.Size = new System.Drawing.Size(172, 2);
             this.label1.TabIndex = 13;
             // 
             // panel_Offers
@@ -418,63 +424,65 @@
             this.panel_Offers.Controls.Add(this.tb_offerName);
             this.panel_Offers.Controls.Add(this.lbl_OfferDesc);
             this.panel_Offers.Controls.Add(this.lbl_OfferName);
-            this.panel_Offers.Location = new System.Drawing.Point(528, 29);
-            this.panel_Offers.Margin = new System.Windows.Forms.Padding(4);
+            this.panel_Offers.Location = new System.Drawing.Point(396, 24);
             this.panel_Offers.Name = "panel_Offers";
-            this.panel_Offers.Size = new System.Drawing.Size(253, 226);
+            this.panel_Offers.Size = new System.Drawing.Size(190, 184);
             this.panel_Offers.TabIndex = 12;
             this.panel_Offers.Visible = false;
             // 
             // tb_offerStampGoal
             // 
-            this.tb_offerStampGoal.Location = new System.Drawing.Point(97, 202);
-            this.tb_offerStampGoal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_offerStampGoal.Location = new System.Drawing.Point(73, 164);
+            this.tb_offerStampGoal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_offerStampGoal.Name = "tb_offerStampGoal";
-            this.tb_offerStampGoal.Size = new System.Drawing.Size(137, 22);
+            this.tb_offerStampGoal.Size = new System.Drawing.Size(104, 19);
             this.tb_offerStampGoal.TabIndex = 8;
             // 
             // lbl_StampGoal
             // 
             this.lbl_StampGoal.AutoSize = true;
-            this.lbl_StampGoal.Location = new System.Drawing.Point(3, 205);
+            this.lbl_StampGoal.Location = new System.Drawing.Point(2, 167);
+            this.lbl_StampGoal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StampGoal.Name = "lbl_StampGoal";
-            this.lbl_StampGoal.Size = new System.Drawing.Size(89, 17);
+            this.lbl_StampGoal.Size = new System.Drawing.Size(70, 13);
             this.lbl_StampGoal.TabIndex = 7;
             this.lbl_StampGoal.Text = "Stamp goal";
             // 
             // tb_offerDesc
             // 
-            this.tb_offerDesc.Location = new System.Drawing.Point(98, 49);
-            this.tb_offerDesc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_offerDesc.Location = new System.Drawing.Point(74, 40);
+            this.tb_offerDesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_offerDesc.Multiline = true;
             this.tb_offerDesc.Name = "tb_offerDesc";
             this.tb_offerDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_offerDesc.Size = new System.Drawing.Size(137, 140);
+            this.tb_offerDesc.Size = new System.Drawing.Size(104, 114);
             this.tb_offerDesc.TabIndex = 6;
             // 
             // tb_offerName
             // 
-            this.tb_offerName.Location = new System.Drawing.Point(98, 14);
-            this.tb_offerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_offerName.Location = new System.Drawing.Point(74, 11);
+            this.tb_offerName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_offerName.Name = "tb_offerName";
-            this.tb_offerName.Size = new System.Drawing.Size(137, 22);
+            this.tb_offerName.Size = new System.Drawing.Size(104, 19);
             this.tb_offerName.TabIndex = 5;
             // 
             // lbl_OfferDesc
             // 
             this.lbl_OfferDesc.AutoSize = true;
-            this.lbl_OfferDesc.Location = new System.Drawing.Point(4, 52);
+            this.lbl_OfferDesc.Location = new System.Drawing.Point(3, 42);
+            this.lbl_OfferDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_OfferDesc.Name = "lbl_OfferDesc";
-            this.lbl_OfferDesc.Size = new System.Drawing.Size(90, 17);
+            this.lbl_OfferDesc.Size = new System.Drawing.Size(71, 13);
             this.lbl_OfferDesc.TabIndex = 4;
             this.lbl_OfferDesc.Text = "Description";
             // 
             // lbl_OfferName
             // 
             this.lbl_OfferName.AutoSize = true;
-            this.lbl_OfferName.Location = new System.Drawing.Point(4, 19);
+            this.lbl_OfferName.Location = new System.Drawing.Point(3, 15);
+            this.lbl_OfferName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_OfferName.Name = "lbl_OfferName";
-            this.lbl_OfferName.Size = new System.Drawing.Size(49, 17);
+            this.lbl_OfferName.Size = new System.Drawing.Size(39, 13);
             this.lbl_OfferName.TabIndex = 3;
             this.lbl_OfferName.Text = "Name";
             // 
@@ -484,44 +492,45 @@
             this.panel_Stores.Controls.Add(this.tb_StoreName);
             this.panel_Stores.Controls.Add(this.lbl_StoreAddress);
             this.panel_Stores.Controls.Add(this.lbl_StoreName);
-            this.panel_Stores.Location = new System.Drawing.Point(528, 29);
-            this.panel_Stores.Margin = new System.Windows.Forms.Padding(4);
+            this.panel_Stores.Location = new System.Drawing.Point(396, 24);
             this.panel_Stores.Name = "panel_Stores";
-            this.panel_Stores.Size = new System.Drawing.Size(253, 102);
+            this.panel_Stores.Size = new System.Drawing.Size(190, 83);
             this.panel_Stores.TabIndex = 11;
             this.panel_Stores.Visible = false;
             // 
             // tb_StoreAddress
             // 
-            this.tb_StoreAddress.Location = new System.Drawing.Point(98, 49);
-            this.tb_StoreAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_StoreAddress.Location = new System.Drawing.Point(74, 40);
+            this.tb_StoreAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_StoreAddress.Name = "tb_StoreAddress";
-            this.tb_StoreAddress.Size = new System.Drawing.Size(137, 22);
+            this.tb_StoreAddress.Size = new System.Drawing.Size(104, 19);
             this.tb_StoreAddress.TabIndex = 6;
             // 
             // tb_StoreName
             // 
-            this.tb_StoreName.Location = new System.Drawing.Point(98, 14);
-            this.tb_StoreName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_StoreName.Location = new System.Drawing.Point(74, 11);
+            this.tb_StoreName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_StoreName.Name = "tb_StoreName";
-            this.tb_StoreName.Size = new System.Drawing.Size(137, 22);
+            this.tb_StoreName.Size = new System.Drawing.Size(104, 19);
             this.tb_StoreName.TabIndex = 5;
             // 
             // lbl_StoreAddress
             // 
             this.lbl_StoreAddress.AutoSize = true;
-            this.lbl_StoreAddress.Location = new System.Drawing.Point(4, 52);
+            this.lbl_StoreAddress.Location = new System.Drawing.Point(3, 42);
+            this.lbl_StoreAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StoreAddress.Name = "lbl_StoreAddress";
-            this.lbl_StoreAddress.Size = new System.Drawing.Size(67, 17);
+            this.lbl_StoreAddress.Size = new System.Drawing.Size(52, 13);
             this.lbl_StoreAddress.TabIndex = 4;
             this.lbl_StoreAddress.Text = "Address";
             // 
             // lbl_StoreName
             // 
             this.lbl_StoreName.AutoSize = true;
-            this.lbl_StoreName.Location = new System.Drawing.Point(4, 19);
+            this.lbl_StoreName.Location = new System.Drawing.Point(3, 15);
+            this.lbl_StoreName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StoreName.Name = "lbl_StoreName";
-            this.lbl_StoreName.Size = new System.Drawing.Size(49, 17);
+            this.lbl_StoreName.Size = new System.Drawing.Size(39, 13);
             this.lbl_StoreName.TabIndex = 3;
             this.lbl_StoreName.Text = "Name";
             // 
@@ -529,35 +538,37 @@
             // 
             this.lbl_StoreSystemMessage.AutoSize = true;
             this.lbl_StoreSystemMessage.ForeColor = System.Drawing.Color.Red;
-            this.lbl_StoreSystemMessage.Location = new System.Drawing.Point(166, 271);
+            this.lbl_StoreSystemMessage.Location = new System.Drawing.Point(124, 220);
+            this.lbl_StoreSystemMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_StoreSystemMessage.Name = "lbl_StoreSystemMessage";
-            this.lbl_StoreSystemMessage.Size = new System.Drawing.Size(0, 17);
+            this.lbl_StoreSystemMessage.Size = new System.Drawing.Size(0, 13);
             this.lbl_StoreSystemMessage.TabIndex = 9;
             // 
             // lbl_StoresSubsNumber
             // 
             this.lbl_StoresSubsNumber.AutoSize = true;
-            this.lbl_StoresSubsNumber.Location = new System.Drawing.Point(672, 489);
-            this.lbl_StoresSubsNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_StoresSubsNumber.Location = new System.Drawing.Point(504, 397);
             this.lbl_StoresSubsNumber.Name = "lbl_StoresSubsNumber";
-            this.lbl_StoresSubsNumber.Size = new System.Drawing.Size(0, 17);
+            this.lbl_StoresSubsNumber.Size = new System.Drawing.Size(0, 13);
             this.lbl_StoresSubsNumber.TabIndex = 10;
             // 
             // lbl_Offer
             // 
             this.lbl_Offer.AutoSize = true;
-            this.lbl_Offer.Location = new System.Drawing.Point(27, 271);
+            this.lbl_Offer.Location = new System.Drawing.Point(20, 220);
+            this.lbl_Offer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Offer.Name = "lbl_Offer";
-            this.lbl_Offer.Size = new System.Drawing.Size(53, 17);
+            this.lbl_Offer.Size = new System.Drawing.Size(41, 13);
             this.lbl_Offer.TabIndex = 8;
             this.lbl_Offer.Text = "Offers";
             // 
             // lbl_Stores
             // 
             this.lbl_Stores.AutoSize = true;
-            this.lbl_Stores.Location = new System.Drawing.Point(27, 20);
+            this.lbl_Stores.Location = new System.Drawing.Point(20, 16);
+            this.lbl_Stores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Stores.Name = "lbl_Stores";
-            this.lbl_Stores.Size = new System.Drawing.Size(55, 17);
+            this.lbl_Stores.Size = new System.Drawing.Size(43, 13);
             this.lbl_Stores.TabIndex = 7;
             this.lbl_Stores.Text = "Stores";
             // 
@@ -569,10 +580,10 @@
             this.btn_AddOffer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_AddOffer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_AddOffer.ForeColor = System.Drawing.Color.White;
-            this.btn_AddOffer.Location = new System.Drawing.Point(27, 533);
-            this.btn_AddOffer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_AddOffer.Location = new System.Drawing.Point(20, 433);
+            this.btn_AddOffer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_AddOffer.Name = "btn_AddOffer";
-            this.btn_AddOffer.Size = new System.Drawing.Size(139, 31);
+            this.btn_AddOffer.Size = new System.Drawing.Size(104, 25);
             this.btn_AddOffer.TabIndex = 0;
             this.btn_AddOffer.TabStop = false;
             this.btn_AddOffer.Text = "Add offer...";
@@ -587,10 +598,10 @@
             this.btn_StoreOfferDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_StoreOfferDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_StoreOfferDelete.ForeColor = System.Drawing.Color.White;
-            this.btn_StoreOfferDelete.Location = new System.Drawing.Point(532, 475);
-            this.btn_StoreOfferDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_StoreOfferDelete.Location = new System.Drawing.Point(399, 386);
+            this.btn_StoreOfferDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_StoreOfferDelete.Name = "btn_StoreOfferDelete";
-            this.btn_StoreOfferDelete.Size = new System.Drawing.Size(229, 31);
+            this.btn_StoreOfferDelete.Size = new System.Drawing.Size(172, 25);
             this.btn_StoreOfferDelete.TabIndex = 0;
             this.btn_StoreOfferDelete.TabStop = false;
             this.btn_StoreOfferDelete.Text = "Delete";
@@ -605,10 +616,10 @@
             this.btn_StoreOfferUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_StoreOfferUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_StoreOfferUpdate.ForeColor = System.Drawing.Color.White;
-            this.btn_StoreOfferUpdate.Location = new System.Drawing.Point(532, 427);
-            this.btn_StoreOfferUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_StoreOfferUpdate.Location = new System.Drawing.Point(399, 347);
+            this.btn_StoreOfferUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_StoreOfferUpdate.Name = "btn_StoreOfferUpdate";
-            this.btn_StoreOfferUpdate.Size = new System.Drawing.Size(229, 31);
+            this.btn_StoreOfferUpdate.Size = new System.Drawing.Size(172, 25);
             this.btn_StoreOfferUpdate.TabIndex = 0;
             this.btn_StoreOfferUpdate.TabStop = false;
             this.btn_StoreOfferUpdate.Text = "Update";
@@ -623,10 +634,10 @@
             this.btn_Logout2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Logout2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Logout2.ForeColor = System.Drawing.Color.White;
-            this.btn_Logout2.Location = new System.Drawing.Point(533, 533);
-            this.btn_Logout2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Logout2.Location = new System.Drawing.Point(400, 433);
+            this.btn_Logout2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Logout2.Name = "btn_Logout2";
-            this.btn_Logout2.Size = new System.Drawing.Size(229, 31);
+            this.btn_Logout2.Size = new System.Drawing.Size(172, 25);
             this.btn_Logout2.TabIndex = 0;
             this.btn_Logout2.TabStop = false;
             this.btn_Logout2.Text = "LOG OUT";
@@ -647,14 +658,14 @@
             this.c_OfferDesc,
             this.c_OfferStoreName,
             this.c_OfferCreated});
-            this.dgv_Offers.Location = new System.Drawing.Point(27, 306);
-            this.dgv_Offers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_Offers.Location = new System.Drawing.Point(20, 249);
+            this.dgv_Offers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_Offers.Name = "dgv_Offers";
             this.dgv_Offers.ReadOnly = true;
             this.dgv_Offers.RowHeadersVisible = false;
             this.dgv_Offers.RowTemplate.Height = 24;
             this.dgv_Offers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Offers.Size = new System.Drawing.Size(491, 200);
+            this.dgv_Offers.Size = new System.Drawing.Size(368, 162);
             this.dgv_Offers.TabIndex = 1;
             this.dgv_Offers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OfferSelectedDataHandler);
             // 
@@ -697,10 +708,10 @@
             this.btn_StoreCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_StoreCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_StoreCreate.ForeColor = System.Drawing.Color.White;
-            this.btn_StoreCreate.Location = new System.Drawing.Point(532, 369);
-            this.btn_StoreCreate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_StoreCreate.Location = new System.Drawing.Point(399, 300);
+            this.btn_StoreCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_StoreCreate.Name = "btn_StoreCreate";
-            this.btn_StoreCreate.Size = new System.Drawing.Size(229, 31);
+            this.btn_StoreCreate.Size = new System.Drawing.Size(172, 25);
             this.btn_StoreCreate.TabIndex = 0;
             this.btn_StoreCreate.TabStop = false;
             this.btn_StoreCreate.Text = "Create Store";
@@ -720,14 +731,14 @@
             this.c_StoreName,
             this.c_StoreAddress,
             this.c_StoreCreated});
-            this.dgv_Stores.Location = new System.Drawing.Point(27, 53);
-            this.dgv_Stores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_Stores.Location = new System.Drawing.Point(20, 43);
+            this.dgv_Stores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_Stores.Name = "dgv_Stores";
             this.dgv_Stores.ReadOnly = true;
             this.dgv_Stores.RowHeadersVisible = false;
             this.dgv_Stores.RowTemplate.Height = 24;
             this.dgv_Stores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Stores.Size = new System.Drawing.Size(491, 202);
+            this.dgv_Stores.Size = new System.Drawing.Size(368, 164);
             this.dgv_Stores.TabIndex = 0;
             this.dgv_Stores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StoreSelectedRowDataHandler);
             // 
@@ -758,11 +769,11 @@
             // 
             // AdminGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 627);
+            this.ClientSize = new System.Drawing.Size(600, 509);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminGUI";
             this.Text = "Stämpelkortify (Admin)";
             this.tabControl1.ResumeLayout(false);

@@ -366,7 +366,22 @@ namespace ERP_WindowsForms_Client
             }
 
             SetSystemMessage("");
+        }
 
+        private void btn_getEmpRelatives_Click(object sender, EventArgs e)
+        {
+            string no = tb_no.Text;
+            if (string.IsNullOrWhiteSpace(no))
+            {
+                SetSystemMessage("ERROR: no employee no entered. Please enter employee no.");
+            }
+            else
+            {
+                TableContents tc = new TableContents(no, "Relatives");
+                tc.Show();
+                SetSystemMessage("");
+            }
+            
         }
 
         public class ComboBoxItem<T>
