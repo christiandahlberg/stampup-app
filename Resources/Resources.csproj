@@ -73,6 +73,8 @@
   <ItemGroup>
     <None Include="Resources\ErrorLog.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\WS1_Java_Client.jar" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

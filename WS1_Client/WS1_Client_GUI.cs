@@ -50,7 +50,7 @@ namespace WS1_Client
                 return;
             }
 
-            string args = "-jar ~/../../../Resources/WS1_Java_Client.jar";
+            string args = "-jar ~/../../../Resources/Resources/WS1_Java_Client.jar";
             StartProcess("java.exe", args);
         }
 

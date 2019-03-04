@@ -68,5 +68,15 @@ namespace Resources.Properties {
                 return ResourceManager.GetString("ErrorLog", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] WS1_Java_Client {
+            get {
+                object obj = ResourceManager.GetObject("WS1_Java_Client", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
