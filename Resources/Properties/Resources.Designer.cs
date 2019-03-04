@@ -61,6 +61,16 @@ namespace Resources.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ERP_Java_Client {
+            get {
+                object obj = ResourceManager.GetObject("ERP_Java_Client", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string ErrorLog {
@@ -75,6 +85,16 @@ namespace Resources.Properties {
         internal static byte[] WS1_Java_Client {
             get {
                 object obj = ResourceManager.GetObject("WS1_Java_Client", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] WS2_Java_Client {
+            get {
+                object obj = ResourceManager.GetObject("WS2_Java_Client", resourceCulture);
                 return ((byte[])(obj));
             }
         }

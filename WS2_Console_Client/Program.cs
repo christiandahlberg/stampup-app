@@ -9,11 +9,12 @@ namespace WS2_Console_Client
 {
     class Program
     {
-
-        public static WS2_Console_Client.ServiceReference.GetEntitiesSoapClient proxy = new ConsoleClientWS2.ServiceReference.GetEntitiesSoapClient();
+        private static WS2_Console_Client.ServiceReference.GetEntitiesSoapClient proxy;
 
         static void Main(string[] args)
         {
+            proxy = new WS2_Console_Client.ServiceReference.GetEntitiesSoapClient();
+
             Console.WriteLine("Welcome to the web service programming assignment 2 console application.\n");
             PrintInstructions();
 
@@ -54,7 +55,7 @@ namespace WS2_Console_Client
 
         public static void PrintCustomers()
         {
-            foreach (Customer customer in proxy.GetCustomers())
+            foreach (ServiceReference.Customer customer in proxy.GetCustomers())
             {
                 Console.WriteLine("-------------------------------\nID: {0}\nName: {1}\nEmail: {2}\nPhone: {3}\nCreated at: {4}",
                     customer.ID, customer.Name, customer.Email, customer.Phone, customer.Created_at);

@@ -8,7 +8,7 @@ namespace WS2_Client
     {
 
         public string FilePath { get; set; }
-        public Form1()
+        public WS2_Client_GUI()
         {
             InitializeComponent();
         }
@@ -19,7 +19,7 @@ namespace WS2_Client
             {
                 StartInfo =
                {
-                   FileName = "ConsoleClientWS2.exe"
+                   FileName = "WS2_Console_Client.exe"
                }
 
             };
@@ -36,23 +36,27 @@ namespace WS2_Client
             {
                 StartInfo =
                 {
-                    FileName = "WindowsFormsClientWS2.exe"
+                    FileName = "WS2_WindowsForms_Client.exe"
                 }
             };
 
             process.Start();
-
-
-
         }
 
         private void btn_JavaClient_Click(object sender, EventArgs e)
         {
+            string args = "-jar ~/../../../Resources/Resources/WS1_Java_Client.jar";
 
+            Process process = new Process()
+            {
+                StartInfo =
+                {
+                    FileName = "java.exe",
+                    Arguments = args
+                }
+            };
 
-
-
-
+            process.Start();
         }
     }
 }

@@ -14,14 +14,13 @@ namespace WS2_WindowsForms_Client
 {
     public partial class WS2_WindowsForms_Client_GUI : Form
     {
-        private WindowsFormsClientWS2.ServiceReference.GetEntitiesSoapClient proxy;
+        private WS2_WindowsForms_Client.ServiceReference.GetEntitiesSoapClient proxy;
 
 
-        public Form1()
+        public WS2_WindowsForms_Client_GUI()
         {
             InitializeComponent();
-            proxy = new WindowsFormsClientWS2.ServiceReference.GetEntitiesSoapClient();
-
+            proxy = new WS2_WindowsForms_Client.ServiceReference.GetEntitiesSoapClient();
         }
 
         private void ClearTable()

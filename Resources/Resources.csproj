@@ -76,5 +76,11 @@
   <ItemGroup>
     <None Include="Resources\WS1_Java_Client.jar" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ERP_Java_Client.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WS2_Java_Client.jar" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
