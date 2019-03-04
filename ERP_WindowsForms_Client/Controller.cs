@@ -85,5 +85,10 @@ namespace ERP_WindowsForms_Client
         {
             return proxy.GetIndexes(tableName);
         }
+
+        public Relative[] GetRelatives(string no)
+        {
+            return proxy.GetRelatives(no);
+        }
     }
 }

@@ -44,10 +44,10 @@
             this.btn_GetAllCustomers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_GetAllCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_GetAllCustomers.ForeColor = System.Drawing.Color.White;
-            this.btn_GetAllCustomers.Location = new System.Drawing.Point(31, 27);
-            this.btn_GetAllCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_GetAllCustomers.Location = new System.Drawing.Point(23, 22);
+            this.btn_GetAllCustomers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_GetAllCustomers.Name = "btn_GetAllCustomers";
-            this.btn_GetAllCustomers.Size = new System.Drawing.Size(129, 34);
+            this.btn_GetAllCustomers.Size = new System.Drawing.Size(97, 28);
             this.btn_GetAllCustomers.TabIndex = 0;
             this.btn_GetAllCustomers.TabStop = false;
             this.btn_GetAllCustomers.Text = "Get Customers";
@@ -62,10 +62,10 @@
             this.btn_GetAllOffers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_GetAllOffers.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_GetAllOffers.ForeColor = System.Drawing.Color.White;
-            this.btn_GetAllOffers.Location = new System.Drawing.Point(385, 27);
-            this.btn_GetAllOffers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_GetAllOffers.Location = new System.Drawing.Point(289, 22);
+            this.btn_GetAllOffers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_GetAllOffers.Name = "btn_GetAllOffers";
-            this.btn_GetAllOffers.Size = new System.Drawing.Size(129, 34);
+            this.btn_GetAllOffers.Size = new System.Drawing.Size(97, 28);
             this.btn_GetAllOffers.TabIndex = 0;
             this.btn_GetAllOffers.TabStop = false;
             this.btn_GetAllOffers.Text = "Get Offers";
@@ -80,10 +80,10 @@
             this.btn_GetAllStores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_GetAllStores.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_GetAllStores.ForeColor = System.Drawing.Color.White;
-            this.btn_GetAllStores.Location = new System.Drawing.Point(208, 27);
-            this.btn_GetAllStores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_GetAllStores.Location = new System.Drawing.Point(156, 22);
+            this.btn_GetAllStores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_GetAllStores.Name = "btn_GetAllStores";
-            this.btn_GetAllStores.Size = new System.Drawing.Size(129, 34);
+            this.btn_GetAllStores.Size = new System.Drawing.Size(97, 28);
             this.btn_GetAllStores.TabIndex = 0;
             this.btn_GetAllStores.TabStop = false;
             this.btn_GetAllStores.Text = "Get Stores";
@@ -97,11 +97,10 @@
             this.dgv_table.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_table.Location = new System.Drawing.Point(31, 76);
-            this.dgv_table.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv_table.Location = new System.Drawing.Point(23, 62);
             this.dgv_table.Name = "dgv_table";
             this.dgv_table.RowHeadersVisible = false;
-            this.dgv_table.Size = new System.Drawing.Size(693, 272);
+            this.dgv_table.Size = new System.Drawing.Size(520, 221);
             this.dgv_table.TabIndex = 3;
             // 
             // button1
@@ -112,28 +111,27 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(558, 27);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(418, 22);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 34);
+            this.button1.Size = new System.Drawing.Size(124, 28);
             this.button1.TabIndex = 4;
             this.button1.TabStop = false;
             this.button1.Text = "Get Subscriptions";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btn_GetAllSubscriptions_Click);
             // 
-            // Form1
+            // WS2_WindowsForms_Client_GUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 376);
+            this.ClientSize = new System.Drawing.Size(571, 306);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgv_table);
             this.Controls.Add(this.btn_GetAllStores);
             this.Controls.Add(this.btn_GetAllOffers);
             this.Controls.Add(this.btn_GetAllCustomers);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "WS2_WindowsForms_Client_GUI";
             this.Text = "Web Service 2";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_table)).EndInit();
             this.ResumeLayout(false);

@@ -433,7 +433,5 @@ namespace PK1_Client
                 dgv_Offers.Rows.Add(offer.ID, offer.Name, offer.Description, offer.Store.Name, offer.Created_at.ToString());
             }
         }
-
-
     }
 }

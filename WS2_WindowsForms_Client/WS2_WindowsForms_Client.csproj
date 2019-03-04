@@ -69,6 +69,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WS2_WindowsForms_Client_GUI.resx">
+      <DependentUpon>WS2_WindowsForms_Client_GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Connected Services\ServiceReference\GetEntities.wsdl" />
     <None Include="Connected Services\ServiceReference\WS2_WindowsForms_Client.ServiceReference.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>

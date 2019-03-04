@@ -42,6 +42,9 @@ namespace ERP_WindowsForms_Client
                 case "All constraints":
                     FillMetadataContent("All constraints");
                     break;
+                case "Relatives":
+                    FillRelatives();
+                    break;
             }
 
 
@@ -57,6 +60,19 @@ namespace ERP_WindowsForms_Client
             {
                 dataGridView1.Columns.Add(colName, colName);
             }
+        }
+
+        public void FillRelatives()
+        {
+            _columnNames = new List<string>() { "First name", "Last name", "Relative code" };
+            SetColumns();
+            label1.Text = String.Format("Relatives to employee no: {0}", _tableName);
+
+            foreach (Relative relative in controller.GetRelatives(_tableName))
+            {
+                dataGridView1.Rows.Add(relative.FirstName, relative.LastName, relative.RelativeCode);
+            }
+
         }
 
         public void FillContent()
