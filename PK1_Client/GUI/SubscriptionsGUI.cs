@@ -131,7 +131,6 @@ namespace PK1_Client.GUI
 
                 if (isChecked)
                 {
-
                     // See if sub is already active (fixing error)
                     if (offerController.FindSubscription(oId, cId))
                     {
@@ -180,6 +179,10 @@ namespace PK1_Client.GUI
         }
     }
 
+    /// <summary>
+    /// Custom class to handle objects in combobox to display and return different values.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ComboBoxItem<T>
     {
         public string DisplayMember = string.Empty;
