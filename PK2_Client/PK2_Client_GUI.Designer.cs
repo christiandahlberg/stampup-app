@@ -1,6 +1,6 @@
 ﻿namespace PK2_Client
 {
-    partial class View
+    partial class PK2_Client_GUI
     {
         /// <summary>
         /// Required designer variable.
