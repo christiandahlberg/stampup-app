@@ -119,7 +119,7 @@ namespace Resources
         {
             // Include enterprise logic for logging exceptions   
             // Get the absolute path to the log file   
-            string logFile = "~/../../../Resources/ErrorLog.txt";
+            string logFile = "~/../../Resources/ErrorLog.txt";
 
             // Open the log file for append and write the log  
             StreamWriter sw = new StreamWriter(logFile, true);

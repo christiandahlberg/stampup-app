@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using PK1_Client.Model;
-using Resources;
 
+using Resources;
+using Resources.Models;
 
 namespace PK1_Client.DAL
 {

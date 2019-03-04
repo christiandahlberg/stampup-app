@@ -1,10 +1,11 @@
-﻿using PK1_Client.DAL;
-using PK1_Client.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using PK1_Client.DAL;
+using Resources.Models;
 
 namespace PK1_Client.Controller
 {

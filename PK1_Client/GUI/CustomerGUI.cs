@@ -1,6 +1,5 @@
 ﻿using PK1_Client.Controller;
 using PK1_Client.GUI;
-using PK1_Client.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Resources.Models;
 
 namespace PK1_Client
 {

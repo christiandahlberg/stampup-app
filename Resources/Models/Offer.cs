@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PK1_Client.Model
+namespace Resources.Models
 {
     public class Offer
     {

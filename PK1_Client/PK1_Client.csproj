@@ -82,9 +82,6 @@
     <Compile Include="GUI\SubscriptionsGUI.Designer.cs">
       <DependentUpon>SubscriptionsGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Customer.cs" />
-    <Compile Include="Model\Offer.cs" />
-    <Compile Include="Model\Store.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DAL\OfferDAL.cs" />
@@ -102,7 +99,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Resourcess\Resources.csproj">
+    <ProjectReference Include="..\Resources\Resources.csproj">
       <Project>{6e76a945-061c-4a26-85bd-14292ef8c840}</Project>
       <Name>Resources</Name>
     </ProjectReference>

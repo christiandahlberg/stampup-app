@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PK1_Client.DAL;
 using PK1_Client.GUI;
-using PK1_Client.Model;
+using Resources.Models;
 
 namespace PK1_Client
 {
