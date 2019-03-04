@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Resources; 
 
-
 namespace ERP_Client
 {
     public partial class ERP_Client_GUI : Form
@@ -20,15 +19,16 @@ namespace ERP_Client
             InitializeComponent();
         }
 
-        private void btnWindowsForms_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            ClientRunner.Start("ERP_Java_Client.exe");
+            ClientRunner.Start("ERP1_WindowsForm_Client.exe");
+
         }
 
-        private void btnJavaClient_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             string args = "\"" + Directory.GetParent(Directory.GetCurrentDirectory())
-    .Parent.Parent.FullName + @"\Resources\Resources\ERP_Java_Client.jar" + "\"";
+                .Parent.Parent.FullName + @"\Resources\Resources\ERP_Java_Client.jar" + "\"";
             args = args.Insert(0, "-jar ");
 
             ClientRunner.Start("java.exe", args);
