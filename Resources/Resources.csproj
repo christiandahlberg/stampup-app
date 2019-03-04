@@ -74,7 +74,7 @@
     <None Include="Resources\ErrorLog.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\WS1_Java_Client.jar" />
+    <EmbeddedResource Include="Resources\WS1_Java_Client.jar" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ERP_Java_Client.jar" />

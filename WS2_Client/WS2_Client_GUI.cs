@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Diagnostics;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace WS2_Client
@@ -45,7 +47,9 @@ namespace WS2_Client
 
         private void btn_JavaClient_Click(object sender, EventArgs e)
         {
-            string args = "-jar ~/../../../Resources/Resources/WS1_Java_Client.jar";
+            string args = "\"" +  Directory.GetParent(Directory.GetCurrentDirectory())
+                .Parent.Parent.FullName + @"\Resources\Resources\WS2_Java_Client.jar" + "\"";
+            args = args.Insert(0, "-jar ");
 
             Process process = new Process()
             {

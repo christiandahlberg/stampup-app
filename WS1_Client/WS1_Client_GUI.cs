@@ -49,8 +49,11 @@ namespace WS1_Client
                 label2.Text = "Please choose a valid file.";
                 return;
             }
+            string args = "\"" + Directory.GetParent(Directory.GetCurrentDirectory())
+                .Parent.Parent.FullName + @"\Resources\Resources\WS1_Java_Client.jar" + "\"";
+            args = args.Insert(0, "-jar ");
 
-            string args = "-jar ~/../../../Resources/Resources/WS1_Java_Client.jar";
+            // string args = "-jar WS1_Java_Client.jar"; // "-jar ~/../../../Resources/Resources/WS1_Java_Client.jar";
             StartProcess("java.exe", args);
         }
 
