@@ -70,7 +70,7 @@ namespace PK2_Client
         private void setColumnHeader(string varName, string comboBox)
         {
             dgv_ResultTable.Columns.Add(varName, comboBox);
-            dgv_ResultTable.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.SystemColors.Highlight;
+            dgv_ResultTable.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0))))); ;
             dgv_ResultTable.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold);
             dgv_ResultTable.EnableHeadersVisualStyles = false;
             dgv_ResultTable.ColumnHeadersHeight = 24;
