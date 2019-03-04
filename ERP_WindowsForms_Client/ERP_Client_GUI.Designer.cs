@@ -96,6 +96,7 @@
             this.dgv_Employee.Location = new System.Drawing.Point(286, 77);
             this.dgv_Employee.Name = "dgv_Employee";
             this.dgv_Employee.RowHeadersVisible = false;
+            this.dgv_Employee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Employee.Size = new System.Drawing.Size(905, 327);
             this.dgv_Employee.TabIndex = 0;
             this.dgv_Employee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Employee_CellContentClick);
@@ -581,7 +582,7 @@
             this.btn_sickestPerson.UseVisualStyleBackColor = false;
             this.btn_sickestPerson.Click += new System.EventHandler(this.btn_sickestPerson_Click);
             // 
-            // Form1
+            // ERP_Client_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -593,7 +594,7 @@
             this.Controls.Add(this.lbl_systemMessage);
             this.Controls.Add(this.panel_CreateUpdate);
             this.Controls.Add(this.dgv_Employee);
-            this.Name = "Form1";
+            this.Name = "ERP_Client_GUI";
             this.Text = "CRONUS Employee CRUD";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee)).EndInit();
             this.panel_CreateUpdate.ResumeLayout(false);

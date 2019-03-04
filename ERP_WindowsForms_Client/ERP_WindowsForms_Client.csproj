@@ -74,6 +74,9 @@
     <Compile Include="TableContent.Designer.cs">
       <DependentUpon>TableContent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ERP_Client_GUI.resx">
+      <DependentUpon>ERP_Client_GUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
