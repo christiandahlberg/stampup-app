@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\CustomerDAL.cs" />
+    <Compile Include="DAL\OfferDAL.cs" />
+    <Compile Include="DAL\StoreDAL.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="ExceptionHandler.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Offer.cs" />
@@ -69,5 +73,6 @@
   <ItemGroup>
     <None Include="Resources\ErrorLog.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

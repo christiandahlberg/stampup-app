@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PK1_Client.DAL;
 using PK1_Client.GUI;
+using Resources.DAL;
 using Resources.Models;
 
 namespace PK1_Client

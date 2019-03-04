@@ -1,14 +1,13 @@
-﻿using System;
+﻿using Resources.Models;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-using Resources;
-using Resources.Models;
-
-namespace PK1_Client.DAL
+namespace Resources.DAL
 {
     public class StoreDAL
     {

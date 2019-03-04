@@ -1,16 +1,15 @@
-﻿using System;
+﻿using Resources.Models;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-using Resources;
-using Resources.Models;
-
-namespace PK1_Client.DAL
+namespace Resources.DAL
 {
-   public class OfferDAL
+    public class OfferDAL
     {
         private Database database;
         private SqlConnection connection;
@@ -401,7 +400,7 @@ namespace PK1_Client.DAL
                 {
                     success = true;
                 }
-                
+
             }
             catch (SqlException e)
             {
@@ -414,6 +413,43 @@ namespace PK1_Client.DAL
             finally { database.CloseConnection(connection); }
 
             return success;
+        }
+
+        public List<Subscription> GetSubscriptions()
+        {
+            List<Subscription> subscriptions = new List<Subscription>();
+            string tsql = "SELECT * FROM Customer_Offer";
+            SqlCommand command = new SqlCommand(tsql, connection);
+
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int customer_ID = reader.GetInt32(0);
+                    int offer_ID = reader.GetInt32(1);
+                    int stamps_attained = reader.GetInt32(2);
+                    DateTime created_at = reader.GetDateTime(3);
+
+                    subscriptions.Add(new Subscription(customer_ID, offer_ID, stamps_attained, created_at));
+
+                }
+
+                reader.Close();
+            }
+            catch (SqlException e)
+            {
+                ExceptionHandler.HandleErrorException(e);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleErrorException(e);
+            }
+            finally { database.CloseConnection(connection); }
+
+            return subscriptions;
         }
     }
 }

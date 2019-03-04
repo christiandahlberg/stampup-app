@@ -55,9 +55,6 @@
     <Compile Include="GUI\CustomerGUI.Designer.cs">
       <DependentUpon>CustomerGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAL\CustomerDAL.cs" />
-    <Compile Include="DAL\StoreDAL.cs" />
-    <Compile Include="Database.cs" />
     <Compile Include="GUI\AdminGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,7 +81,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DAL\OfferDAL.cs" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

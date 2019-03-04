@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using Resources.DAL;
 using Resources.Models;
 
 namespace WS2_WebService
@@ -28,43 +29,42 @@ namespace WS2_WebService
         // [System.Web.Script.Services.ScriptService]
         public class GetEntities : System.Web.Services.WebService
         {
+            private CustomerDAL customerDAL;
+            private StoreDAL storeDAL;
+            private OfferDAL offerDAL;
+
+            public GetEntities()
+            {
+                customerDAL = new CustomerDAL();
+                storeDAL = new StoreDAL();
+                offerDAL = new OfferDAL();
+            }
 
             [WebMethod]
             public List<Customer> GetCustomers()
             {
-
-                CustomerDAL customerDAL = new CustomerDAL();
                 List<Customer> customerList = customerDAL.GetAllCustomers();
-
                 return customerList;
             }
 
             [WebMethod]
             public List<Store> GetStores()
             {
-
-                StoreDAL storeDAL = new StoreDAL();
                 List<Store> storeList = storeDAL.GetAllStores();
-
                 return storeList;
             }
 
             [WebMethod]
             public List<Offer> GetOffers()
             {
-
-                OfferDAL offerDAL = new OfferDAL();
                 List<Offer> offerList = offerDAL.GetAllOffers();
-
                 return offerList;
             }
 
             [WebMethod]
             public List<Subscription> GetSubscriptions()
             {
-                OfferDAL subscriptionDAL = new OfferDAL();
-                List<Subscription> subscriptionList = subscriptionDAL.GetSubscriptions();
-
+                List<Subscription> subscriptionList = offerDAL.GetSubscriptions();
                 return subscriptionList;
             }
         }

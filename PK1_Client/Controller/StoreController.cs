@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using PK1_Client.DAL;
+using Resources.DAL;
 
 using Resources.Models;
 
