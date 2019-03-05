@@ -7,7 +7,6 @@ using ERP_WindowsForms_Client.ServiceReference;
 
 namespace ERP_WindowsForms_Client
 {
-
     class Controller
     {
         private ERP_WindowsForms_Client.ServiceReference.CronusSoapClient proxy;
