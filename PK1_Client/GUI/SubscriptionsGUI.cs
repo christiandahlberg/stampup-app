@@ -180,17 +180,37 @@ namespace PK1_Client.GUI
 
         private void btnAddStamp_Click(object sender, EventArgs e)
         {
-            int offerId = (int)dgv_Offers.Rows[dgv_Offers.CurrentCell.RowIndex].Cells[0].Value;
-            Offer o = offerController.GetOfferByOfferID(offerId);
-            int current_stamps = customerController.GetStampsAttained(((ComboBoxItem<int>)comboBox_Customer.SelectedItem).ValueMember, offerId);
-
-            if (customerController.IncrementStampsAttained(((ComboBoxItem<int>)comboBox_Customer.SelectedItem).ValueMember, offerId))
+            if (comboBox_Customer.SelectedItem == null)
             {
-                lbl_SystemMessage.Text = $"Stamp added. Current stamp on {o.Name}: {current_stamps} of {o.StampGoal}.";
+                lbl_SystemMessage.Text = "Please choose a customer.";
+            } else if (comboBox_Store.SelectedItem == null)
+            {
+                lbl_SystemMessage.Text = "Please choose a store.";
             } else
             {
-                lbl_SystemMessage.Text = $"Stamp goal achieved ({current_stamps} of {o.StampGoal}).";
+                int offerId = (int)dgv_Offers.Rows[dgv_Offers.CurrentCell.RowIndex].Cells[0].Value;
+                Offer o = offerController.GetOfferByOfferID(offerId);
+                int current_stamps = customerController.GetStampsAttained(((ComboBoxItem<int>)comboBox_Customer.SelectedItem).ValueMember, offerId);
+
+                if (offerController.FindSubscription(offerId, ((ComboBoxItem<int>)comboBox_Customer.SelectedItem).ValueMember))
+                {
+                    if (customerController.IncrementStampsAttained(((ComboBoxItem<int>)comboBox_Customer.SelectedItem).ValueMember, offerId))
+                    {
+                        current_stamps++;
+                        lbl_SystemMessage.Text = $"Stamp added. Current stamp on {o.Name}: {current_stamps} of {o.StampGoal}.";
+                    }
+                    else
+                    {
+                        lbl_SystemMessage.Text = $"Stamp goal achieved ({current_stamps} of {o.StampGoal}).";
+                    }
+                }
+                else
+                {
+                    lbl_SystemMessage.Text = "Please choose an offer to increment stamps for.";
+                }
             }
+            
+            
         }
     }
 
