@@ -273,9 +273,13 @@ namespace PK1_Client
                 stampsInt = int.Parse(tb_offerStampGoal.Text);
             }
 
-            Offer updatedOffer = new Offer(offerId, name, description, offer.Store, stampsInt, offer.Created_at);
+            // Update Offer Instance
+            offer.ID = offerId;
+            offer.Name = name;
+            offer.Description = description;
+            offer.StampGoal = stampsInt;
 
-            offerController.UpdateOffer(updatedOffer);
+            offerController.UpdateOffer(offer);
 
             UpdateTableContent();
         }

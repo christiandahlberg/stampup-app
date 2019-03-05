@@ -43,7 +43,13 @@ namespace PK1_Client.Controller
 
         public Boolean CreateOffer(string name, string description, Store store, int stampGoal)
         {
-            Offer offer = new Offer(name, description, store, stampGoal);
+            Offer offer = new Offer()
+            {
+                Name = name,
+                Description = description,
+                Store = store,
+                StampGoal = stampGoal
+            };
             return offerDAL.CreateOffer(offer);
         }
 

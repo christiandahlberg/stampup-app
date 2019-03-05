@@ -35,18 +35,22 @@ namespace Resources.DAL
 
                 while (reader.Read())
                 {
-                    int oID = reader.GetInt32(0);
-                    string oName = reader.GetString(1);
-                    string oDesc = reader.GetString(2);
-                    int oGoalAmount = reader.GetInt32(3);
-                    int storeID = reader.GetInt32(4);
-                    DateTime created_at = reader.GetDateTime(5);
 
-                    Store oStore = storeDAL.GetStoreById(storeID);
+                    Store oStore = storeDAL.GetStoreById(reader.GetInt32(reader.GetOrdinal("store_id")));
 
                     if (oStore != null)
                     {
-                        offerList.Add(new Offer(oID, oName, oDesc, oStore, oGoalAmount, created_at));
+                        Offer offer = new Offer()
+                        {
+                            ID = reader.GetInt32(reader.GetOrdinal("id")),
+                            Name = reader.GetString(reader.GetOrdinal("name")),
+                            Description = reader.GetString(reader.GetOrdinal("description")),
+                            StampGoal = reader.GetInt32(reader.GetOrdinal("stamp_goal")),
+                            Store = oStore,
+                            Created_at = reader.GetDateTime(reader.GetOrdinal("created"))
+                        };
+
+                        offerList.Add(offer);
                     }
 
                 }
@@ -166,8 +170,6 @@ namespace Resources.DAL
         // Returns description of offer
         public string GetOfferDescription(int oId)
         {
-            string description = null;
-
             string tsql = "SELECT description FROM Offer WHERE offer_id = @oId";
 
             // Create command and add parameters
@@ -182,7 +184,7 @@ namespace Resources.DAL
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                     {
-                        description = reader.GetString(0);
+                        return reader.GetString(reader.GetOrdinal("description"));
                     }
                 }
             }
@@ -196,13 +198,13 @@ namespace Resources.DAL
             }
             finally { database.CloseConnection(connection); }
 
-            return description;
+            return null;
         }
 
         public List<Offer> GetCustomerOffers(int cId, int sId)
         {
             List<Offer> customer_offer_list = new List<Offer>();
-            string tsql = "SELECT * FROM Offer JOIN Customer_Offer ON id = offer_id WHERE customer_id = @customer_id AND store_id = @store_id; ";
+            string tsql = "SELECT * FROM Offer JOIN Customer_Offer ON id = offer_id WHERE customer_id = @customer_id AND store_id = @store_id";
 
             // Create command and add parameters
             SqlCommand command = new SqlCommand(tsql, connection);
@@ -216,12 +218,16 @@ namespace Resources.DAL
 
                 while (reader.Read())
                 {
-                    string offer_name = reader.GetString(1);
-                    string offer_desc = reader.GetString(2);
-                    int offer_stampgoal = reader.GetInt32(3);
-                    int offer_id = reader.GetInt32(7);
 
-                    customer_offer_list.Add(new Offer(offer_id, offer_name, offer_desc, offer_stampgoal));
+                    Offer offer = new Offer()
+                    {
+                        Name = reader.GetString(reader.GetOrdinal("name")),
+                        Description = reader.GetString(reader.GetOrdinal("description")),
+                        StampGoal = reader.GetInt32(reader.GetOrdinal("stamp_goal")),
+                        ID = reader.GetInt32(reader.GetOrdinal("offer_id"))
+                    };
+
+                    customer_offer_list.Add(offer);
                 }
             }
             catch (SqlException e)
@@ -251,12 +257,16 @@ namespace Resources.DAL
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    string offer_name = reader.GetString(1);
-                    string offer_desc = reader.GetString(2);
-                    int offer_stampgoal = reader.GetInt32(3);
-                    int offer_id = reader.GetInt32(7);
 
-                    return new Offer(offer_id, offer_name, offer_desc, offer_stampgoal);
+                    Offer offer = new Offer()
+                    {
+                        Name = reader.GetString(reader.GetOrdinal("name")),
+                        Description = reader.GetString(reader.GetOrdinal("description")),
+                        StampGoal = reader.GetInt32(reader.GetOrdinal("stamp_goal")),
+                        ID = reader.GetInt32(reader.GetOrdinal("offer_id"))
+                    };
+
+                    return offer;
                 }
             }
             catch (SqlException e)
@@ -301,12 +311,15 @@ namespace Resources.DAL
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    string offer_name = reader.GetString(1);
-                    string offer_desc = reader.GetString(2);
-                    int offer_stampgoal = reader.GetInt32(3);
-                    int offer_id = reader.GetInt32(7);
+                    Offer offer = new Offer()
+                    {
+                        Name = reader.GetString(reader.GetOrdinal("name")),
+                        Description = reader.GetString(reader.GetOrdinal("description")),
+                        StampGoal = reader.GetInt32(reader.GetOrdinal("stamp_goal")),
+                        ID = reader.GetInt32(reader.GetOrdinal("offer_id"))
+                    };
 
-                    customer_offers.Add(new Offer(offer_id, offer_name, offer_desc, offer_stampgoal));
+                    customer_offers.Add(offer);
                 }
             }
             catch (SqlException e)
