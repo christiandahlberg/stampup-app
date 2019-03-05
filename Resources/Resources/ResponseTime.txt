@@ -28,3 +28,6 @@ Response Time: 00:00:00.07
 ********** 05/03/2019 10:53:05 **********
 Method: OFFERGUI: 
 Response Time: 00:00:00.63
+********** 2019-03-05 13:41:46 **********
+Method: GENERAL: Log Out
+Response Time: 00:00:00.090
