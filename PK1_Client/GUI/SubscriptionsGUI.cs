@@ -177,6 +177,21 @@ namespace PK1_Client.GUI
                 selectedStore_Click(sender, e);
             }
         }
+
+        private void btnAddStamp_Click(object sender, EventArgs e)
+        {
+            int offerId = (int)dgv_Offers.Rows[dgv_Offers.CurrentCell.RowIndex].Cells[0].Value;
+            Offer o = offerController.GetOfferByOfferID(offerId);
+            int current_stamps = customerController.GetStampsAttained(((ComboBoxItem<int>)comboBox_Customer.SelectedItem).ValueMember, offerId);
+
+            if (customerController.IncrementStampsAttained(((ComboBoxItem<int>)comboBox_Customer.SelectedItem).ValueMember, offerId))
+            {
+                lbl_SystemMessage.Text = $"Stamp added. Current stamp on {o.Name}: {current_stamps} of {o.StampGoal}.";
+            } else
+            {
+                lbl_SystemMessage.Text = $"Stamp goal achieved ({current_stamps} of {o.StampGoal}).";
+            }
+        }
     }
 
     /// <summary>

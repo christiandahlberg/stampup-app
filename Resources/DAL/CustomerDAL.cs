@@ -268,7 +268,7 @@ namespace Resources.DAL
         public Boolean IncrementStampsAttained(int cId, int oId)
         {
             Boolean success = false;
-            string tsql = "UPDATE Customer_Offer SET stamps_attained + 1 WHERE customer_id = @cId AND offer_id = @oId";
+            string tsql = "UPDATE Customer_Offer SET stamps_attained = stamps_attained + 1 WHERE customer_id = @cId AND offer_id = @oId";
 
             // Create command and add parameters
             SqlCommand command = new SqlCommand(tsql, connection);
