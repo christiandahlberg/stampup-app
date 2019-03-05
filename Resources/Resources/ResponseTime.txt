@@ -13,3 +13,18 @@ Response Time: 00:00:00.00
 ********** 2019-03-05 10:54:32 **********
 Method: CreateCustomer
 Response Time: 00:00:00.70
+********** 05/03/2019 10:32:36 **********
+Method: GetAllCustomers
+Response Time: 00:00:00.03
+********** 05/03/2019 10:47:30 **********
+Method: SignIn
+Response Time: 00:00:01.63
+********** 05/03/2019 10:49:33 **********
+Method: LOGINGUI: Register
+Response Time: 00:00:00.61
+********** 05/03/2019 10:50:55 **********
+Method: GENERAL: Log Out
+Response Time: 00:00:00.07
+********** 05/03/2019 10:53:05 **********
+Method: OFFERGUI: 
+Response Time: 00:00:00.63

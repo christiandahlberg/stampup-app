@@ -122,11 +122,6 @@ namespace Resources
             string logFile = Directory.GetParent(Directory.GetCurrentDirectory())
                 .Parent.Parent.FullName + @"\Resources\Resources\ErrorLog.txt";
 
-            //string logFile = AddQuotesIfRequired(
-            //    Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName
-            //    + @"\Resources\Resources\ErrorLog.txt"
-            //);
-
             // Open the log file for append and write the log  
             StreamWriter sw = new StreamWriter(logFile, true);
 
@@ -137,14 +132,6 @@ namespace Resources
                 sw.WriteLine(e.Message);
             }
             sw.Close();
-        }
-
-        public static string AddQuotesIfRequired(string path)
-        {
-            return !string.IsNullOrWhiteSpace(path) ?
-                path.Contains(" ") && (!path.StartsWith("\"") && !path.EndsWith("\"")) ?
-                    "\"" + path + "\"" : path :
-                    string.Empty;
         }
     }
 }

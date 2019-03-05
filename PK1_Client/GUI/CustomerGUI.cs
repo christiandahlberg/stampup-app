@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Resources.Models;
+using Resources;
 
 namespace PK1_Client
 {
@@ -36,10 +37,13 @@ namespace PK1_Client
 
         private void CustomerLogOut(object sender, EventArgs e)
         {
+
+            Performance.StartResponseTimer("GENERAL: Log Out");
             Hide();
             var login = new LoginGUI();
             login.Closed += (s, args) => this.Close();
             login.Show();
+            Performance.EndResponseTimer();
         }
 
         private void UpdateTableContent()
