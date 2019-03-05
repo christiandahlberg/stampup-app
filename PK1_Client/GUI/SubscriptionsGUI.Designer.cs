@@ -110,6 +110,7 @@
             this.dgv_Offers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Offers.Size = new System.Drawing.Size(422, 185);
             this.dgv_Offers.TabIndex = 10;
+            this.dgv_Offers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.setAddStampTrue);
             this.dgv_Offers.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.subscribed_CellMouseUp);
             this.dgv_Offers.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.subscribed_CellValueChanged);
             // 
@@ -151,7 +152,7 @@
             // 
             // btnAddStamp
             // 
-            this.btnAddStamp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAddStamp.BackColor = System.Drawing.Color.Gray;
             this.btnAddStamp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnAddStamp.FlatAppearance.BorderSize = 0;
             this.btnAddStamp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -165,6 +166,7 @@
             this.btnAddStamp.TabStop = false;
             this.btnAddStamp.Text = "Add Stamp";
             this.btnAddStamp.UseVisualStyleBackColor = true;
+            this.btnAddStamp.Enabled = false;
             this.btnAddStamp.Click += new System.EventHandler(this.btnAddStamp_Click);
             // 
             // SubscriptionsGUI
