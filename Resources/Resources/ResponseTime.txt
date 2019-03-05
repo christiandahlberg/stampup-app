@@ -4,3 +4,12 @@ Response Time: 00:00:00.05
 ********** 2019-03-05 09:21:49 **********
 Method: GetAllCustomers
 Response Time: 00:00:00.04
+********** 2019-03-05 10:54:04 **********
+Method: CreateCustomer
+Response Time: 00:00:00.00
+********** 2019-03-05 10:54:24 **********
+Method: CreateCustomer
+Response Time: 00:00:00.00
+********** 2019-03-05 10:54:32 **********
+Method: CreateCustomer
+Response Time: 00:00:00.70
