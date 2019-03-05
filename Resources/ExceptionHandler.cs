@@ -68,7 +68,7 @@ namespace Resources
                     break;
                 default:
                     message += e.Message;
-                    throw e;
+                    break;
             }
             LogException(message, e);
         }
@@ -110,7 +110,7 @@ namespace Resources
                     break;
                 default:
                     message += e.Message;
-                    throw e;
+                    break;
             }
             LogException(message, e);
         }
@@ -118,15 +118,33 @@ namespace Resources
         public static void LogException(string message, Exception e)
         {
             // Include enterprise logic for logging exceptions   
-            // Get the absolute path to the log file   
-            string logFile = "~/../../Resources/ErrorLog.txt";
+            // Get the absolute path to the log file
+            string logFile = Directory.GetParent(Directory.GetCurrentDirectory())
+                .Parent.Parent.FullName + @"\Resources\Resources\ErrorLog.txt";
+
+            //string logFile = AddQuotesIfRequired(
+            //    Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName
+            //    + @"\Resources\Resources\ErrorLog.txt"
+            //);
 
             // Open the log file for append and write the log  
             StreamWriter sw = new StreamWriter(logFile, true);
+
             sw.WriteLine("********** {0} **********", DateTime.Now);
             sw.WriteLine(message);
-            sw.WriteLine(e.Message);
+            if (e != null)
+            {
+                sw.WriteLine(e.Message);
+            }
             sw.Close();
+        }
+
+        public static string AddQuotesIfRequired(string path)
+        {
+            return !string.IsNullOrWhiteSpace(path) ?
+                path.Contains(" ") && (!path.StartsWith("\"") && !path.EndsWith("\"")) ?
+                    "\"" + path + "\"" : path :
+                    string.Empty;
         }
     }
 }

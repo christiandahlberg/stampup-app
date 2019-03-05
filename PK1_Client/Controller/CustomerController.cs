@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Resources;
 using Resources.DAL;
 using Resources.Models;
 
@@ -57,7 +59,11 @@ namespace PK1_Client.Controller
 
         public List<Customer> GetAllCustomers()
         {
-            return customerDAL.GetAllCustomers();
+            Performance.StartResponseTimer("GetAllCustomers");
+            List<Customer> customerList = customerDAL.GetAllCustomers();
+            Performance.EndResponseTimer();
+
+            return customerList;
         }
 
         public Customer GetCustomerById(int id)

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PK1_Client.GUI;
+using Resources;
 using Resources.DAL;
 using Resources.Models;
 
@@ -17,16 +19,10 @@ namespace PK1_Client
         [STAThread]
         static void Main()
         {
+            string logFile = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName
+                + @"\Resources\Resources\ErrorLog.txt";
 
-            CustomerDAL cDAL = new CustomerDAL();
-
-            foreach (Customer cus in cDAL.GetAllCustomers())
-            {
-                Console.WriteLine("Name: " + cus.Name);
-                Console.WriteLine("Email: " + cus.Email);
-                Console.WriteLine("Phone: " + cus.Phone);
-                Console.WriteLine("-------------------------");
-            }
+            Console.WriteLine(ExceptionHandler.AddQuotesIfRequired(logFile));
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
