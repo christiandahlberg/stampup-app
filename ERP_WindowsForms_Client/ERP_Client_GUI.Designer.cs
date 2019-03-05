@@ -93,11 +93,12 @@
             this.dgv_Employee.AllowUserToOrderColumns = true;
             this.dgv_Employee.AllowUserToResizeRows = false;
             this.dgv_Employee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Employee.Location = new System.Drawing.Point(286, 77);
+            this.dgv_Employee.Location = new System.Drawing.Point(381, 95);
+            this.dgv_Employee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_Employee.Name = "dgv_Employee";
             this.dgv_Employee.RowHeadersVisible = false;
             this.dgv_Employee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Employee.Size = new System.Drawing.Size(905, 327);
+            this.dgv_Employee.Size = new System.Drawing.Size(1207, 402);
             this.dgv_Employee.TabIndex = 0;
             this.dgv_Employee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Employee_CellContentClick);
             // 
@@ -141,9 +142,10 @@
             // 
             this.lbl_no.AutoSize = true;
             this.lbl_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_no.Location = new System.Drawing.Point(8, 9);
+            this.lbl_no.Location = new System.Drawing.Point(11, 11);
+            this.lbl_no.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_no.Name = "lbl_no";
-            this.lbl_no.Size = new System.Drawing.Size(29, 15);
+            this.lbl_no.Size = new System.Drawing.Size(35, 18);
             this.lbl_no.TabIndex = 1;
             this.lbl_no.Text = "No:";
             // 
@@ -151,9 +153,10 @@
             // 
             this.lbl_firstName.AutoSize = true;
             this.lbl_firstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_firstName.Location = new System.Drawing.Point(8, 39);
+            this.lbl_firstName.Location = new System.Drawing.Point(11, 48);
+            this.lbl_firstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_firstName.Name = "lbl_firstName";
-            this.lbl_firstName.Size = new System.Drawing.Size(79, 15);
+            this.lbl_firstName.Size = new System.Drawing.Size(93, 18);
             this.lbl_firstName.TabIndex = 2;
             this.lbl_firstName.Text = "First name:";
             // 
@@ -161,9 +164,10 @@
             // 
             this.lbl_lastName.AutoSize = true;
             this.lbl_lastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_lastName.Location = new System.Drawing.Point(8, 69);
+            this.lbl_lastName.Location = new System.Drawing.Point(11, 85);
+            this.lbl_lastName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_lastName.Name = "lbl_lastName";
-            this.lbl_lastName.Size = new System.Drawing.Size(78, 15);
+            this.lbl_lastName.Size = new System.Drawing.Size(91, 18);
             this.lbl_lastName.TabIndex = 3;
             this.lbl_lastName.Text = "Last name:";
             // 
@@ -171,9 +175,10 @@
             // 
             this.lbl_jobTitle.AutoSize = true;
             this.lbl_jobTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_jobTitle.Location = new System.Drawing.Point(8, 99);
+            this.lbl_jobTitle.Location = new System.Drawing.Point(11, 122);
+            this.lbl_jobTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_jobTitle.Name = "lbl_jobTitle";
-            this.lbl_jobTitle.Size = new System.Drawing.Size(62, 15);
+            this.lbl_jobTitle.Size = new System.Drawing.Size(73, 18);
             this.lbl_jobTitle.TabIndex = 4;
             this.lbl_jobTitle.Text = "Job title:";
             // 
@@ -181,9 +186,10 @@
             // 
             this.lbl_address.AutoSize = true;
             this.lbl_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_address.Location = new System.Drawing.Point(8, 129);
+            this.lbl_address.Location = new System.Drawing.Point(11, 159);
+            this.lbl_address.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_address.Name = "lbl_address";
-            this.lbl_address.Size = new System.Drawing.Size(62, 15);
+            this.lbl_address.Size = new System.Drawing.Size(74, 18);
             this.lbl_address.TabIndex = 5;
             this.lbl_address.Text = "Address:";
             // 
@@ -191,9 +197,10 @@
             // 
             this.lbl_city.AutoSize = true;
             this.lbl_city.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_city.Location = new System.Drawing.Point(8, 159);
+            this.lbl_city.Location = new System.Drawing.Point(11, 196);
+            this.lbl_city.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_city.Name = "lbl_city";
-            this.lbl_city.Size = new System.Drawing.Size(34, 15);
+            this.lbl_city.Size = new System.Drawing.Size(42, 18);
             this.lbl_city.TabIndex = 6;
             this.lbl_city.Text = "City:";
             // 
@@ -201,9 +208,10 @@
             // 
             this.lbl_phone.AutoSize = true;
             this.lbl_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_phone.Location = new System.Drawing.Point(8, 189);
+            this.lbl_phone.Location = new System.Drawing.Point(11, 233);
+            this.lbl_phone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_phone.Name = "lbl_phone";
-            this.lbl_phone.Size = new System.Drawing.Size(48, 15);
+            this.lbl_phone.Size = new System.Drawing.Size(56, 18);
             this.lbl_phone.TabIndex = 7;
             this.lbl_phone.Text = "Phone";
             // 
@@ -211,9 +219,10 @@
             // 
             this.lbl_email.AutoSize = true;
             this.lbl_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_email.Location = new System.Drawing.Point(8, 219);
+            this.lbl_email.Location = new System.Drawing.Point(11, 270);
+            this.lbl_email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(48, 15);
+            this.lbl_email.Size = new System.Drawing.Size(55, 18);
             this.lbl_email.TabIndex = 8;
             this.lbl_email.Text = "Email:";
             // 
@@ -221,73 +230,86 @@
             // 
             this.lbl_ssn.AutoSize = true;
             this.lbl_ssn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ssn.Location = new System.Drawing.Point(8, 249);
+            this.lbl_ssn.Location = new System.Drawing.Point(11, 306);
+            this.lbl_ssn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ssn.Name = "lbl_ssn";
-            this.lbl_ssn.Size = new System.Drawing.Size(39, 15);
+            this.lbl_ssn.Size = new System.Drawing.Size(47, 18);
             this.lbl_ssn.TabIndex = 23;
             this.lbl_ssn.Text = "SSN:";
             // 
             // tb_no
             // 
-            this.tb_no.Location = new System.Drawing.Point(93, 8);
+            this.tb_no.Location = new System.Drawing.Point(124, 10);
+            this.tb_no.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_no.Name = "tb_no";
-            this.tb_no.Size = new System.Drawing.Size(150, 20);
+            this.tb_no.ReadOnly = true;
+            this.tb_no.Size = new System.Drawing.Size(199, 22);
             this.tb_no.TabIndex = 9;
             // 
             // tb_firstName
             // 
-            this.tb_firstName.Location = new System.Drawing.Point(93, 38);
+            this.tb_firstName.Location = new System.Drawing.Point(124, 47);
+            this.tb_firstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_firstName.Name = "tb_firstName";
-            this.tb_firstName.Size = new System.Drawing.Size(150, 20);
+            this.tb_firstName.Size = new System.Drawing.Size(199, 22);
             this.tb_firstName.TabIndex = 10;
+            this.tb_firstName.TextChanged += new System.EventHandler(this.tb_firstName_TextChanged);
             // 
             // tb_lastName
             // 
-            this.tb_lastName.Location = new System.Drawing.Point(93, 68);
+            this.tb_lastName.Location = new System.Drawing.Point(124, 84);
+            this.tb_lastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_lastName.Name = "tb_lastName";
-            this.tb_lastName.Size = new System.Drawing.Size(150, 20);
+            this.tb_lastName.Size = new System.Drawing.Size(199, 22);
             this.tb_lastName.TabIndex = 11;
+            this.tb_lastName.TextChanged += new System.EventHandler(this.tb_lastName_TextChanged_1);
             // 
             // tb_jobTitle
             // 
-            this.tb_jobTitle.Location = new System.Drawing.Point(93, 98);
+            this.tb_jobTitle.Location = new System.Drawing.Point(124, 121);
+            this.tb_jobTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_jobTitle.Name = "tb_jobTitle";
-            this.tb_jobTitle.Size = new System.Drawing.Size(150, 20);
+            this.tb_jobTitle.Size = new System.Drawing.Size(199, 22);
             this.tb_jobTitle.TabIndex = 12;
             // 
             // tb_address
             // 
-            this.tb_address.Location = new System.Drawing.Point(93, 129);
+            this.tb_address.Location = new System.Drawing.Point(124, 159);
+            this.tb_address.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_address.Name = "tb_address";
-            this.tb_address.Size = new System.Drawing.Size(150, 20);
+            this.tb_address.Size = new System.Drawing.Size(199, 22);
             this.tb_address.TabIndex = 13;
             // 
             // tb_city
             // 
-            this.tb_city.Location = new System.Drawing.Point(93, 158);
+            this.tb_city.Location = new System.Drawing.Point(124, 194);
+            this.tb_city.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_city.Name = "tb_city";
-            this.tb_city.Size = new System.Drawing.Size(150, 20);
+            this.tb_city.Size = new System.Drawing.Size(199, 22);
             this.tb_city.TabIndex = 14;
             // 
             // tb_phone
             // 
-            this.tb_phone.Location = new System.Drawing.Point(93, 188);
+            this.tb_phone.Location = new System.Drawing.Point(124, 231);
+            this.tb_phone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_phone.Name = "tb_phone";
-            this.tb_phone.Size = new System.Drawing.Size(150, 20);
+            this.tb_phone.Size = new System.Drawing.Size(199, 22);
             this.tb_phone.TabIndex = 15;
             // 
             // tb_email
             // 
-            this.tb_email.Location = new System.Drawing.Point(93, 218);
+            this.tb_email.Location = new System.Drawing.Point(124, 268);
+            this.tb_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_email.Name = "tb_email";
-            this.tb_email.Size = new System.Drawing.Size(150, 20);
+            this.tb_email.Size = new System.Drawing.Size(199, 22);
             this.tb_email.TabIndex = 16;
             // 
             // tb_ssn
             // 
-            this.tb_ssn.Location = new System.Drawing.Point(93, 248);
+            this.tb_ssn.Location = new System.Drawing.Point(124, 305);
+            this.tb_ssn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_ssn.Name = "tb_ssn";
-            this.tb_ssn.Size = new System.Drawing.Size(150, 20);
+            this.tb_ssn.Size = new System.Drawing.Size(199, 22);
             this.tb_ssn.TabIndex = 24;
             // 
             // panel_CreateUpdate
@@ -315,9 +337,10 @@
             this.panel_CreateUpdate.Controls.Add(this.lbl_lastName);
             this.panel_CreateUpdate.Controls.Add(this.lbl_firstName);
             this.panel_CreateUpdate.Controls.Add(this.lbl_no);
-            this.panel_CreateUpdate.Location = new System.Drawing.Point(12, 38);
+            this.panel_CreateUpdate.Location = new System.Drawing.Point(16, 47);
+            this.panel_CreateUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_CreateUpdate.Name = "panel_CreateUpdate";
-            this.panel_CreateUpdate.Size = new System.Drawing.Size(260, 366);
+            this.panel_CreateUpdate.Size = new System.Drawing.Size(346, 450);
             this.panel_CreateUpdate.TabIndex = 17;
             // 
             // btn_update
@@ -325,9 +348,10 @@
             this.btn_update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_update.Location = new System.Drawing.Point(138, 317);
+            this.btn_update.Location = new System.Drawing.Point(184, 390);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(105, 29);
+            this.btn_update.Size = new System.Drawing.Size(140, 36);
             this.btn_update.TabIndex = 22;
             this.btn_update.Text = "Update";
             this.btn_update.UseVisualStyleBackColor = false;
@@ -338,9 +362,10 @@
             this.btn_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_delete.Location = new System.Drawing.Point(11, 317);
+            this.btn_delete.Location = new System.Drawing.Point(15, 390);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(105, 29);
+            this.btn_delete.Size = new System.Drawing.Size(140, 36);
             this.btn_delete.TabIndex = 21;
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = false;
@@ -351,9 +376,10 @@
             this.btn_clearFields.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_clearFields.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clearFields.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_clearFields.Location = new System.Drawing.Point(138, 282);
+            this.btn_clearFields.Location = new System.Drawing.Point(184, 347);
+            this.btn_clearFields.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_clearFields.Name = "btn_clearFields";
-            this.btn_clearFields.Size = new System.Drawing.Size(105, 29);
+            this.btn_clearFields.Size = new System.Drawing.Size(140, 36);
             this.btn_clearFields.TabIndex = 20;
             this.btn_clearFields.Text = "Clear fields";
             this.btn_clearFields.UseVisualStyleBackColor = false;
@@ -364,9 +390,10 @@
             this.btn_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_create.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_create.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_create.Location = new System.Drawing.Point(11, 282);
+            this.btn_create.Location = new System.Drawing.Point(15, 347);
+            this.btn_create.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_create.Name = "btn_create";
-            this.btn_create.Size = new System.Drawing.Size(105, 29);
+            this.btn_create.Size = new System.Drawing.Size(140, 36);
             this.btn_create.TabIndex = 19;
             this.btn_create.Text = "Create";
             this.btn_create.UseVisualStyleBackColor = false;
@@ -376,9 +403,10 @@
             // 
             this.lbl_systemMessage.AutoSize = true;
             this.lbl_systemMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_systemMessage.Location = new System.Drawing.Point(9, 9);
+            this.lbl_systemMessage.Location = new System.Drawing.Point(12, 11);
+            this.lbl_systemMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_systemMessage.Name = "lbl_systemMessage";
-            this.lbl_systemMessage.Size = new System.Drawing.Size(319, 15);
+            this.lbl_systemMessage.Size = new System.Drawing.Size(380, 18);
             this.lbl_systemMessage.TabIndex = 18;
             this.lbl_systemMessage.Text = "PLACEHOLDER this is the system message label";
             // 
@@ -386,17 +414,19 @@
             // 
             this.lbl_searchByNo.AutoSize = true;
             this.lbl_searchByNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_searchByNo.Location = new System.Drawing.Point(283, 47);
+            this.lbl_searchByNo.Location = new System.Drawing.Point(377, 58);
+            this.lbl_searchByNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_searchByNo.Name = "lbl_searchByNo";
-            this.lbl_searchByNo.Size = new System.Drawing.Size(169, 15);
+            this.lbl_searchByNo.Size = new System.Drawing.Size(201, 18);
             this.lbl_searchByNo.TabIndex = 19;
             this.lbl_searchByNo.Text = "Search employees by No:";
             // 
             // tb_searchByNo
             // 
-            this.tb_searchByNo.Location = new System.Drawing.Point(458, 47);
+            this.tb_searchByNo.Location = new System.Drawing.Point(611, 58);
+            this.tb_searchByNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_searchByNo.Name = "tb_searchByNo";
-            this.tb_searchByNo.Size = new System.Drawing.Size(58, 20);
+            this.tb_searchByNo.Size = new System.Drawing.Size(76, 22);
             this.tb_searchByNo.TabIndex = 25;
             // 
             // btn_search
@@ -404,9 +434,10 @@
             this.btn_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_search.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_search.Location = new System.Drawing.Point(522, 42);
+            this.btn_search.Location = new System.Drawing.Point(696, 52);
+            this.btn_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(64, 29);
+            this.btn_search.Size = new System.Drawing.Size(85, 36);
             this.btn_search.TabIndex = 25;
             this.btn_search.Text = "Search";
             this.btn_search.UseVisualStyleBackColor = false;
@@ -426,17 +457,19 @@
             this.panel_sickestEmployeeYear.Controls.Add(this.lbl_relatedTables);
             this.panel_sickestEmployeeYear.Controls.Add(this.checkBox_specialMode);
             this.panel_sickestEmployeeYear.Controls.Add(this.btn_sickestPerson);
-            this.panel_sickestEmployeeYear.Location = new System.Drawing.Point(1201, 77);
+            this.panel_sickestEmployeeYear.Location = new System.Drawing.Point(1601, 95);
+            this.panel_sickestEmployeeYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel_sickestEmployeeYear.Name = "panel_sickestEmployeeYear";
-            this.panel_sickestEmployeeYear.Size = new System.Drawing.Size(351, 327);
+            this.panel_sickestEmployeeYear.Size = new System.Drawing.Size(467, 402);
             this.panel_sickestEmployeeYear.TabIndex = 26;
             // 
             // lbl_relatedMetadataSystemMessage
             // 
             this.lbl_relatedMetadataSystemMessage.AutoSize = true;
-            this.lbl_relatedMetadataSystemMessage.Location = new System.Drawing.Point(10, 101);
+            this.lbl_relatedMetadataSystemMessage.Location = new System.Drawing.Point(13, 124);
+            this.lbl_relatedMetadataSystemMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_relatedMetadataSystemMessage.Name = "lbl_relatedMetadataSystemMessage";
-            this.lbl_relatedMetadataSystemMessage.Size = new System.Drawing.Size(189, 13);
+            this.lbl_relatedMetadataSystemMessage.Size = new System.Drawing.Size(254, 17);
             this.lbl_relatedMetadataSystemMessage.TabIndex = 35;
             this.lbl_relatedMetadataSystemMessage.Text = "placeholder ssytem message metadata";
             // 
@@ -446,9 +479,10 @@
             this.panel1.Controls.Add(this.btn_sickestEmpYear);
             this.panel1.Controls.Add(this.tb_sickestEmployeeYear);
             this.panel1.Controls.Add(this.lbl_sickYear);
-            this.panel1.Location = new System.Drawing.Point(9, 189);
+            this.panel1.Location = new System.Drawing.Point(12, 233);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(163, 86);
+            this.panel1.Size = new System.Drawing.Size(217, 105);
             this.panel1.TabIndex = 34;
             // 
             // btn_sickestEmpYear
@@ -456,9 +490,10 @@
             this.btn_sickestEmpYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_sickestEmpYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sickestEmpYear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_sickestEmpYear.Location = new System.Drawing.Point(4, 31);
+            this.btn_sickestEmpYear.Location = new System.Drawing.Point(5, 38);
+            this.btn_sickestEmpYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_sickestEmpYear.Name = "btn_sickestEmpYear";
-            this.btn_sickestEmpYear.Size = new System.Drawing.Size(154, 40);
+            this.btn_sickestEmpYear.Size = new System.Drawing.Size(205, 49);
             this.btn_sickestEmpYear.TabIndex = 4;
             this.btn_sickestEmpYear.Text = "Get employees absent due to sickness by year";
             this.btn_sickestEmpYear.UseVisualStyleBackColor = false;
@@ -466,18 +501,20 @@
             // 
             // tb_sickestEmployeeYear
             // 
-            this.tb_sickestEmployeeYear.Location = new System.Drawing.Point(47, 9);
+            this.tb_sickestEmployeeYear.Location = new System.Drawing.Point(63, 11);
+            this.tb_sickestEmployeeYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_sickestEmployeeYear.Name = "tb_sickestEmployeeYear";
-            this.tb_sickestEmployeeYear.Size = new System.Drawing.Size(65, 20);
+            this.tb_sickestEmployeeYear.Size = new System.Drawing.Size(85, 22);
             this.tb_sickestEmployeeYear.TabIndex = 3;
             // 
             // lbl_sickYear
             // 
             this.lbl_sickYear.AutoSize = true;
             this.lbl_sickYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_sickYear.Location = new System.Drawing.Point(9, 12);
+            this.lbl_sickYear.Location = new System.Drawing.Point(12, 15);
+            this.lbl_sickYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_sickYear.Name = "lbl_sickYear";
-            this.lbl_sickYear.Size = new System.Drawing.Size(32, 13);
+            this.lbl_sickYear.Size = new System.Drawing.Size(42, 17);
             this.lbl_sickYear.TabIndex = 0;
             this.lbl_sickYear.Text = "Year:";
             // 
@@ -486,9 +523,10 @@
             this.btn_getEmpRelatives.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_getEmpRelatives.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_getEmpRelatives.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_getEmpRelatives.Location = new System.Drawing.Point(8, 137);
+            this.btn_getEmpRelatives.Location = new System.Drawing.Point(11, 169);
+            this.btn_getEmpRelatives.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_getEmpRelatives.Name = "btn_getEmpRelatives";
-            this.btn_getEmpRelatives.Size = new System.Drawing.Size(158, 25);
+            this.btn_getEmpRelatives.Size = new System.Drawing.Size(211, 31);
             this.btn_getEmpRelatives.TabIndex = 33;
             this.btn_getEmpRelatives.Text = "Get employee relatives";
             this.btn_getEmpRelatives.UseVisualStyleBackColor = false;
@@ -497,9 +535,10 @@
             // lbl_metadata
             // 
             this.lbl_metadata.AutoSize = true;
-            this.lbl_metadata.Location = new System.Drawing.Point(6, 58);
+            this.lbl_metadata.Location = new System.Drawing.Point(8, 71);
+            this.lbl_metadata.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_metadata.Name = "lbl_metadata";
-            this.lbl_metadata.Size = new System.Drawing.Size(55, 13);
+            this.lbl_metadata.Size = new System.Drawing.Size(71, 17);
             this.lbl_metadata.TabIndex = 32;
             this.lbl_metadata.Text = "Metadata:";
             // 
@@ -507,9 +546,10 @@
             // 
             this.cb_metadata.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_metadata.FormattingEnabled = true;
-            this.cb_metadata.Location = new System.Drawing.Point(9, 74);
+            this.cb_metadata.Location = new System.Drawing.Point(12, 91);
+            this.cb_metadata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cb_metadata.Name = "cb_metadata";
-            this.cb_metadata.Size = new System.Drawing.Size(268, 21);
+            this.cb_metadata.Size = new System.Drawing.Size(356, 24);
             this.cb_metadata.TabIndex = 31;
             this.cb_metadata.SelectedIndexChanged += new System.EventHandler(this.cb_metadataSelectionChanged);
             // 
@@ -519,9 +559,10 @@
             this.btn_getMetadata.Enabled = false;
             this.btn_getMetadata.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_getMetadata.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_getMetadata.Location = new System.Drawing.Point(291, 71);
+            this.btn_getMetadata.Location = new System.Drawing.Point(388, 87);
+            this.btn_getMetadata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_getMetadata.Name = "btn_getMetadata";
-            this.btn_getMetadata.Size = new System.Drawing.Size(43, 25);
+            this.btn_getMetadata.Size = new System.Drawing.Size(57, 31);
             this.btn_getMetadata.TabIndex = 30;
             this.btn_getMetadata.Text = "Get";
             this.btn_getMetadata.UseVisualStyleBackColor = false;
@@ -532,9 +573,10 @@
             this.btn_getRelatedTablesGet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_getRelatedTablesGet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_getRelatedTablesGet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_getRelatedTablesGet.Location = new System.Drawing.Point(291, 20);
+            this.btn_getRelatedTablesGet.Location = new System.Drawing.Point(388, 25);
+            this.btn_getRelatedTablesGet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_getRelatedTablesGet.Name = "btn_getRelatedTablesGet";
-            this.btn_getRelatedTablesGet.Size = new System.Drawing.Size(43, 23);
+            this.btn_getRelatedTablesGet.Size = new System.Drawing.Size(57, 28);
             this.btn_getRelatedTablesGet.TabIndex = 29;
             this.btn_getRelatedTablesGet.Text = "Get";
             this.btn_getRelatedTablesGet.UseVisualStyleBackColor = false;
@@ -545,17 +587,19 @@
             this.cb_relatedTables.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cb_relatedTables.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cb_relatedTables.FormattingEnabled = true;
-            this.cb_relatedTables.Location = new System.Drawing.Point(9, 22);
+            this.cb_relatedTables.Location = new System.Drawing.Point(12, 27);
+            this.cb_relatedTables.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cb_relatedTables.Name = "cb_relatedTables";
-            this.cb_relatedTables.Size = new System.Drawing.Size(268, 21);
+            this.cb_relatedTables.Size = new System.Drawing.Size(356, 24);
             this.cb_relatedTables.TabIndex = 28;
             // 
             // lbl_relatedTables
             // 
             this.lbl_relatedTables.AutoSize = true;
-            this.lbl_relatedTables.Location = new System.Drawing.Point(5, 6);
+            this.lbl_relatedTables.Location = new System.Drawing.Point(7, 7);
+            this.lbl_relatedTables.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_relatedTables.Name = "lbl_relatedTables";
-            this.lbl_relatedTables.Size = new System.Drawing.Size(78, 13);
+            this.lbl_relatedTables.Size = new System.Drawing.Size(103, 17);
             this.lbl_relatedTables.TabIndex = 27;
             this.lbl_relatedTables.Text = "Related tables:";
             // 
@@ -563,9 +607,10 @@
             // 
             this.checkBox_specialMode.AutoSize = true;
             this.checkBox_specialMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_specialMode.Location = new System.Drawing.Point(162, 297);
+            this.checkBox_specialMode.Location = new System.Drawing.Point(216, 366);
+            this.checkBox_specialMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox_specialMode.Name = "checkBox_specialMode";
-            this.checkBox_specialMode.Size = new System.Drawing.Size(59, 16);
+            this.checkBox_specialMode.Size = new System.Drawing.Size(77, 19);
             this.checkBox_specialMode.TabIndex = 2;
             this.checkBox_specialMode.Text = "Special?";
             this.checkBox_specialMode.UseVisualStyleBackColor = true;
@@ -575,9 +620,10 @@
             this.btn_sickestPerson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_sickestPerson.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sickestPerson.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_sickestPerson.Location = new System.Drawing.Point(16, 291);
+            this.btn_sickestPerson.Location = new System.Drawing.Point(21, 358);
+            this.btn_sickestPerson.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_sickestPerson.Name = "btn_sickestPerson";
-            this.btn_sickestPerson.Size = new System.Drawing.Size(140, 25);
+            this.btn_sickestPerson.Size = new System.Drawing.Size(187, 31);
             this.btn_sickestPerson.TabIndex = 1;
             this.btn_sickestPerson.Text = "Get sickest person";
             this.btn_sickestPerson.UseVisualStyleBackColor = false;
@@ -585,9 +631,9 @@
             // 
             // ERP_Client_GUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1540, 432);
+            this.ClientSize = new System.Drawing.Size(1924, 532);
             this.Controls.Add(this.panel_sickestEmployeeYear);
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.tb_searchByNo);
@@ -595,6 +641,7 @@
             this.Controls.Add(this.lbl_systemMessage);
             this.Controls.Add(this.panel_CreateUpdate);
             this.Controls.Add(this.dgv_Employee);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ERP_Client_GUI";
             this.Text = "CRONUS Employee CRUD";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Employee)).EndInit();

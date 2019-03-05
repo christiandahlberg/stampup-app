@@ -141,6 +141,10 @@ namespace ERP_WindowsForms_Client
         // Fills text boxes with data from the table row that was last klicked
         private void dgv_Employee_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            btn_create.Enabled = false;
+            btn_create.BackColor = Color.Gray;
+            btn_create.ForeColor = Color.White;
+
             DataGridViewRow row = dgv_Employee.Rows[e.RowIndex];
             ClearTextBoxes();
 
@@ -169,12 +173,13 @@ namespace ERP_WindowsForms_Client
         {
             ClearTextBoxes();
             SetSystemMessage("Fields cleared");
+            btn_create.Enabled = true;
+            btn_create.BackColor = Color.FromArgb(255,128,0);
         }
 
         // CREATE
         private void btn_create_Click(object sender, EventArgs e)
         {
-            string no = tb_no.Text;
             string firstName = tb_firstName.Text;
             string lastName = tb_lastName.Text;
             string jobTitle = tb_jobTitle.Text;
@@ -184,8 +189,7 @@ namespace ERP_WindowsForms_Client
             string email = tb_email.Text;
             string ssn = tb_ssn.Text;
 
-            if (string.IsNullOrWhiteSpace(no) ||
-                string.IsNullOrWhiteSpace(firstName) ||
+            if (string.IsNullOrWhiteSpace(firstName) ||
                 string.IsNullOrWhiteSpace(lastName) ||
                 string.IsNullOrWhiteSpace(jobTitle) ||
                 string.IsNullOrWhiteSpace(address) ||
@@ -198,6 +202,7 @@ namespace ERP_WindowsForms_Client
             }
             else
             {
+
                 // Create new insance of Employee with values equal to textfields
                 Employee employee = new Employee()
                 {
@@ -211,10 +216,19 @@ namespace ERP_WindowsForms_Client
                     Email = tb_email.Text,
                     SSN = tb_ssn.Text
                 };
-                controller.CreateEmployee(employee);
-                UpdateDGV();
-                ClearTextBoxes();
-                SetSystemMessage("Employee " + ssn + " successfully created!");
+
+                if (!controller.EmployeeExist(employee.No))
+                {
+                    controller.CreateEmployee(employee);
+                    UpdateDGV();
+                    ClearTextBoxes();
+                    SetSystemMessage("Employee " + ssn + " successfully created!");
+                } else
+                {
+                    SetSystemMessage("Employee with given No_ already exists.");
+                }
+                
+                
             }
         }
 
@@ -414,6 +428,24 @@ namespace ERP_WindowsForms_Client
         {
             btn_getMetadata.Enabled = true;
             btn_getMetadata.BackColor = Color.FromArgb(255, 128, 0);
+        }
+
+        private void tb_firstName_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tb_firstName.Text) == false && 
+                string.IsNullOrWhiteSpace(tb_lastName.Text) == false)
+            {
+                tb_no.Text = tb_firstName.Text.Substring(0, 1).ToUpper() + tb_lastName.Text.Substring(0, 1).ToUpper();
+            }
+        }
+
+        private void tb_lastName_TextChanged_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(tb_firstName.Text) == false && 
+                string.IsNullOrWhiteSpace(tb_lastName.Text) == false)
+            {
+                tb_no.Text = tb_firstName.Text.Substring(0, 1).ToUpper() + tb_lastName.Text.Substring(0, 1).ToUpper();
+            }
         }
     }
 }

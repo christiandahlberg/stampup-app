@@ -23,6 +23,19 @@ namespace ERP_WindowsForms_Client
             return employees;
         }
 
+        public Boolean EmployeeExist(string empNo)
+        {
+            foreach(Employee emp in GetEmployees())
+            {
+                if (emp.No.Equals(empNo))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public Boolean CreateEmployee(Employee employee)
         {
             return proxy.CreateEmployee(employee);
