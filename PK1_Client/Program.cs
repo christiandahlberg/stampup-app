@@ -21,8 +21,7 @@ namespace PK1_Client
         {
             string logFile = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName
                 + @"\Resources\Resources\ErrorLog.txt";
-
-            Console.WriteLine(ExceptionHandler.AddQuotesIfRequired(logFile));
+            
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PK1_Client.Controller;
+using Resources;
 using Resources.Models;
 
 namespace PK1_Client.GUI

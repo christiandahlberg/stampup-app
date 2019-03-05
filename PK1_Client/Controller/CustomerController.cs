@@ -56,9 +56,7 @@ namespace PK1_Client.Controller
 
         public List<Customer> GetAllCustomers()
         {
-            Performance.StartResponseTimer("GetAllCustomers");
             List<Customer> customerList = customerDAL.GetAllCustomers();
-            Performance.EndResponseTimer();
 
             return customerList;
         }
