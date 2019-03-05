@@ -72,6 +72,7 @@ namespace PK1_Client.GUI
         {
             // Clears
             dgv_Offers.Rows.Clear();
+            setAddStampFalse();
             SetSystemMessage("");
             
             foreach (Offer o in offerController.GetAllOffers())
@@ -98,6 +99,12 @@ namespace PK1_Client.GUI
                 }
             }
 
+        }
+
+        private void setAddStampFalse()
+        {
+            btnAddStamp.BackColor = Color.Gray;
+            btnAddStamp.Enabled = false;
         }
 
         // Sets system message depending on error or successful
@@ -174,6 +181,7 @@ namespace PK1_Client.GUI
         {
             if (comboBox_Store.SelectedItem != null)
             {
+                setAddStampFalse();
                 selectedStore_Click(sender, e);
             }
         }
@@ -206,11 +214,16 @@ namespace PK1_Client.GUI
                 }
                 else
                 {
-                    lbl_SystemMessage.Text = "Please choose an offer to increment stamps for.";
+                    lbl_SystemMessage.Text = "Please choose a subscription to increment stamps for.";
                 }
             }
-            
-            
+        }
+
+        private void setAddStampTrue(object sender, DataGridViewCellEventArgs e)
+        {
+            btnAddStamp.Enabled = true;
+            btnAddStamp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+
         }
     }
 
