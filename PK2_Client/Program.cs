@@ -24,8 +24,6 @@ namespace PK2_Client
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PK2_Client_GUI(controller));
-
-
         }
     }
 }

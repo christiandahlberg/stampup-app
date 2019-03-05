@@ -328,7 +328,7 @@
             this.Controls.Add(this.lbl_CustAvailableStores);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CustomerGUI";
-            this.Text = "CustomerGUI";
+            this.Text = "Stämpelkortify";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CustStores)).EndInit();
             this.panel_Subscriptions.ResumeLayout(false);
             this.panel_Subscriptions.PerformLayout();

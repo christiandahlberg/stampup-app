@@ -35,11 +35,11 @@ namespace PK2_Client
                 try
                 {
                     setColumnHeader("tableColumn", (string)cb_Tables.SelectedItem);
-                    foreach (string column in controller.getColumnNames(cb_Tables.SelectedItem))
+                    foreach (string column in controller.GetColumnNames(cb_Tables.SelectedItem))
                     {
                         dgv_ResultTable.Rows.Add(column);
                     }
-                    lbl_RowCount.Text = controller.getRowCount(cb_Tables.SelectedItem);
+                    lbl_RowCount.Text = controller.GetRowCount(cb_Tables.SelectedItem);
 
                     dgv_ResultTable.CurrentCell.Selected = false;
                 }

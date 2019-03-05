@@ -58,9 +58,6 @@ namespace PK1_Client.GUI
                     SetSystemMessage("ERROR: Failed to create offer.");
                 }
             }
-
-
-
         }
 
         // ---------------------------------------------------------------------------

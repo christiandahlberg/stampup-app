@@ -13,10 +13,9 @@ namespace Resources
         private readonly string _dbName = "SYSA14";
         private readonly string _username = "jdbc_admin";
         private readonly string _password = "0B[2blTpc}gd";
-        private SqlConnection connection = null;
 
         // Public Fields
-        public SqlConnection Connection { get => connection; }
+        public SqlConnection Connection { get; private set; } = null;
 
         public Database()
         {
@@ -29,7 +28,7 @@ namespace Resources
             // Create and set connection
             try
             {
-                connection = new SqlConnection(GetConnectionString());
+                Connection = new SqlConnection(GetConnectionString());
             }
             catch (SqlException e)
             {

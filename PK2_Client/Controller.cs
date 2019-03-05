@@ -22,7 +22,7 @@ namespace PK2_Client
             return tableReader.TableObjects;
         }
 
-        public string getRowCount(object selectedItem)
+        public string GetRowCount(object selectedItem)
         {
             TableObject tableObject = tableReader.GetTableObjectByName((string)selectedItem);
 
@@ -35,7 +35,7 @@ namespace PK2_Client
             return numberOfRows;
         }
 
-        public List<string> getColumnNames(object selectedItem)
+        public List<string> GetColumnNames(object selectedItem)
         {
             List<string> columnNames;
             TableObject tableObject = tableReader.GetTableObjectByName((string)selectedItem);

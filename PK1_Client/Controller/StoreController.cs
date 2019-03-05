@@ -52,6 +52,4 @@ namespace PK1_Client.Controller
             return storeDAL.RemoveStore(id);
         }
     }
-
-
 }

@@ -187,7 +187,7 @@ namespace PK1_Client
 
         }
 
-        // UPDATE STORE OR OFFER
+        // DETERMINES WHAT TO UPDATE (Store/Offer)
         private void UpdateStoreOrOffer(object sender, EventArgs e)
         {
 
@@ -224,9 +224,7 @@ namespace PK1_Client
 
         }
 
-        /// <summary>
-        /// Updates store
-        /// </summary>
+        // UPDATE STORE
         public void UpdateStore(string newName, string newAddress)
         {
             int sId = (int)dgv_Stores.Rows[dgv_Stores.CurrentCell.RowIndex].Cells[0].Value;
@@ -246,9 +244,7 @@ namespace PK1_Client
             UpdateTableContent();
         }
 
-        /// <summary>
-        /// Updates Offer
-        /// </summary>
+        // UPDATE OFFER
         public void UpdateOffer()
         {
             int offerId = (int)dgv_Offers.Rows[dgv_Offers.CurrentCell.RowIndex].Cells[0].Value;

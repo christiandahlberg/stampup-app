@@ -8,6 +8,6 @@ namespace PK1_Client.Controller
 {
     public class Controller
     {
-
+        // Template controller for potential usage.
     }
 }

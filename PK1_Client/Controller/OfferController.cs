@@ -61,8 +61,7 @@ namespace PK1_Client.Controller
         {
             return offerDAL.GetOfferDescription(oId);
         }
-
-        // List
+        
         public List<Offer> GetCustomerOffers(int cId, int sId)
         {
             return offerDAL.GetCustomerOffers(cId, sId);

@@ -73,8 +73,7 @@ namespace PK1_Client.GUI
             // Clears
             dgv_Offers.Rows.Clear();
             SetSystemMessage("");
-
-            // Går på namn nu, måste ändra till store ID på något sätt
+            
             foreach (Offer o in offerController.GetAllOffers())
             {
                 if (o.Store.Name.Equals(comboBox_Store.SelectedItem.ToString()))
@@ -93,17 +92,9 @@ namespace PK1_Client.GUI
                         {
                             DataGridViewCheckBoxCell cell = (DataGridViewCheckBoxCell)row.Cells[3];
                             cell.Value = true;
-
-                            // Den här kallar på eventet som skapar en ny subscriptions
-                            // vilket slutar med att ett primary key violation sker varje
-                            // gång man byter store, eftersom den försöker lägga till en ny sub
-                            // varje gång värdet sätts = true. Måste lösa på något sätt.
-
                         }
                     }
-
                     dgv_Offers.ClearSelection();
-
                 }
             }
 
@@ -136,6 +127,8 @@ namespace PK1_Client.GUI
                 int cId = ((ComboBoxItem<int>)comboBox_Customer.SelectedItem).ValueMember;
 
                 bool isChecked = Convert.ToBoolean(dgv_Offers[e.ColumnIndex, e.RowIndex].Value);
+                dgv_Offers.Rows[e.RowIndex].DefaultCellStyle.BackColor = isChecked ? Color.LightGreen : Color.White;
+
                 if (isChecked)
                 {
                     // See if sub is already active (fixing error)
@@ -151,7 +144,6 @@ namespace PK1_Client.GUI
                             SetSystemMessage("Successfully subscribed.");
                         }
                     }
-
                 }
                 else
                 {
@@ -187,6 +179,10 @@ namespace PK1_Client.GUI
         }
     }
 
+    /// <summary>
+    /// Custom class to handle objects in combobox to display and return different values.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ComboBoxItem<T>
     {
         public string DisplayMember = string.Empty;

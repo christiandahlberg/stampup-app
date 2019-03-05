@@ -9,10 +9,8 @@ namespace Resources
 {
     public class ClientRunner
     {
-
         public static void Start(string clientFile, string args = null)
         {
-
             Process process = new Process
             {
                 StartInfo =
