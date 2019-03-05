@@ -14,10 +14,12 @@ namespace PK1_Client.Controller
     public class CustomerController : Controller
     {
         private CustomerDAL customerDAL;
+        private OfferController offerController;
 
         public CustomerController()
         {
             customerDAL = new CustomerDAL();
+            offerController = new OfferController();
         }
         
         public Boolean CreateCustomer(string name, string email, string phone, string password)
@@ -100,6 +102,17 @@ namespace PK1_Client.Controller
         public int GetStampsAttained(int cId, int oId)
         {
             return customerDAL.GetStampsAttained(cId, oId);
+        }
+
+        public Boolean IncrementStampsAttained(int cId, int oId)
+        {
+            Offer o = offerController.GetOfferByOfferID(oId);
+            int stamps_attained = GetStampsAttained(cId, oId);
+            if (stamps_attained == o.StampGoal) {
+                return false;
+            } else {
+                return customerDAL.IncrementStampsAttained(cId, oId);
+            }
         }
     }
 }

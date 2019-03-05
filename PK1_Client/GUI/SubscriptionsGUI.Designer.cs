@@ -38,6 +38,7 @@
             this.c_Desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.c_Subscribed = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.lbl_SystemMessage = new System.Windows.Forms.Label();
+            this.btnAddStamp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Offers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,7 +101,7 @@
             this.dgv_Offers.RowHeadersVisible = false;
             this.dgv_Offers.RowTemplate.DividerHeight = 2;
             this.dgv_Offers.RowTemplate.Height = 24;
-            this.dgv_Offers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgv_Offers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Offers.Size = new System.Drawing.Size(562, 228);
             this.dgv_Offers.TabIndex = 10;
             this.dgv_Offers.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.subscribed_CellMouseUp);
@@ -141,11 +142,30 @@
             this.lbl_SystemMessage.Size = new System.Drawing.Size(0, 17);
             this.lbl_SystemMessage.TabIndex = 11;
             // 
+            // btnAddStamp
+            // 
+            this.btnAddStamp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnAddStamp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddStamp.FlatAppearance.BorderSize = 0;
+            this.btnAddStamp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddStamp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddStamp.ForeColor = System.Drawing.Color.White;
+            this.btnAddStamp.Location = new System.Drawing.Point(433, 57);
+            this.btnAddStamp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddStamp.Name = "btnAddStamp";
+            this.btnAddStamp.Size = new System.Drawing.Size(159, 34);
+            this.btnAddStamp.TabIndex = 0;
+            this.btnAddStamp.TabStop = false;
+            this.btnAddStamp.Text = "Add Stamp";
+            this.btnAddStamp.UseVisualStyleBackColor = true;
+            this.btnAddStamp.Click += new System.EventHandler(this.btnAddStamp_Click);
+            // 
             // SubscriptionsGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 396);
+            this.ClientSize = new System.Drawing.Size(618, 407);
+            this.Controls.Add(this.btnAddStamp);
             this.Controls.Add(this.lbl_SystemMessage);
             this.Controls.Add(this.dgv_Offers);
             this.Controls.Add(this.comboBox_Store);
@@ -171,5 +191,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn c_OfferName;
         private System.Windows.Forms.DataGridViewTextBoxColumn c_Desc;
         private System.Windows.Forms.DataGridViewCheckBoxColumn c_Subscribed;
+        private System.Windows.Forms.Button btnAddStamp;
     }
 }
