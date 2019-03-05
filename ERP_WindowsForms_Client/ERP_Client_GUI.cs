@@ -292,7 +292,7 @@ namespace ERP_WindowsForms_Client
         // GETS ALL EMPLOYEES OR EMPLOYEES BY NO
         private void btn_search_Click(object sender, EventArgs e)
         {
-            string searchNo = tb_searchByNo.Text;
+            string searchNo = tb_searchByNo.Text.ToUpper();
 
             dgv_Employee.Rows.Clear();
             
@@ -308,7 +308,7 @@ namespace ERP_WindowsForms_Client
 
                 if (employee == null)
                 {
-                    SetSystemMessage("No employee found that matches search No.");
+                    SetSystemMessage("ERROR: No employee found that matches search No.");
                 }
                 else
                 {
