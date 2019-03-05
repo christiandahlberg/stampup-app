@@ -94,8 +94,18 @@ namespace Resources.DAL
                 ExceptionHandler.HandleErrorException(e);
             }
             finally { database.CloseConnection(connection); }
+            
+            // Try to verify password
+            try
+            {
+                return PasswordHasher.Verify(password, hashedPassword);
+            }
+            catch (NotSupportedException e)
+            {
+                ExceptionHandler.HandleErrorException(e);
+            }
 
-            return PasswordHasher.Verify(password, hashedPassword);
+            return false;
         }
 
 

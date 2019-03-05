@@ -30,9 +30,9 @@ namespace ERP_WindowsForms_Client
 
         public Employee SearchEmployee(string no)
         {
-            foreach (Employee employee in GetEmployees())
+            foreach (Employee employee in proxy.GetEmployees())
             {
-                if (employee.No == no)
+                if (employee.No.Equals(no))
                 {
                     return employee;
                 }

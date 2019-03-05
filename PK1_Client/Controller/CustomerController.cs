@@ -58,9 +58,7 @@ namespace PK1_Client.Controller
 
         public List<Customer> GetAllCustomers()
         {
-            List<Customer> customerList = customerDAL.GetAllCustomers();
-
-            return customerList;
+            return customerDAL.GetAllCustomers();
         }
 
         public Customer GetCustomerById(int id)

@@ -43,6 +43,8 @@ namespace PK1_Client.GUI
             }
             else
             {
+
+
                 if (customerController.VerifyCustomer(tb_LoginEmail.Text, tb_LoginPassword.Text))
                 {
                     if (tb_LoginEmail.Text.Contains("@admin.com"))

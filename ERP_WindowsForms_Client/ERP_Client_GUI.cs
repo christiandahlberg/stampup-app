@@ -292,16 +292,31 @@ namespace ERP_WindowsForms_Client
         // GETS ALL EMPLOYEES OR EMPLOYEES BY NO
         private void btn_search_Click(object sender, EventArgs e)
         {
+            string searchNo = tb_searchByNo.Text.ToUpper();
+
             dgv_Employee.Rows.Clear();
-            if (string.IsNullOrWhiteSpace(tb_searchByNo.Text))
+            
+            if (string.IsNullOrWhiteSpace(searchNo))
             {
                 InitializeDGV();
-                SetSystemMessage("Voila, all employees!");
+
+                SetSystemMessage("Displaying all employees");
             }
             else
-                controller.SearchEmployee(tb_searchByNo.Text);
+            {
+                Employee employee = controller.SearchEmployee(searchNo);
 
-            SetSystemMessage("Search button klicked!");
+                if (employee == null)
+                {
+                    SetSystemMessage("ERROR: No employee found that matches search No.");
+                }
+                else
+                {
+                    dgv_Employee.Rows.Add(employee.No, employee.FirstName, employee.LastName, employee.LastName, employee.Address, employee.Address, employee.City, employee.Phone, employee.Email, employee.SSN);
+
+                    SetSystemMessage("Searched for employee with No: " + searchNo);
+                }
+            }
         }
 
 
