@@ -306,9 +306,16 @@ namespace ERP_WindowsForms_Client
             {
                 Employee employee = controller.SearchEmployee(searchNo);
 
-                dgv_Employee.Rows.Add(employee.No, employee.FirstName, employee.LastName, employee.LastName, employee.Address, employee.Address, employee.City, employee.Phone, employee.Email, employee.SSN);
+                if (employee == null)
+                {
+                    SetSystemMessage("No employee found that matches search No.");
+                }
+                else
+                {
+                    dgv_Employee.Rows.Add(employee.No, employee.FirstName, employee.LastName, employee.LastName, employee.Address, employee.Address, employee.City, employee.Phone, employee.Email, employee.SSN);
 
-                SetSystemMessage("Searched for employee with No: " + searchNo);
+                    SetSystemMessage("Searched for employee with No: " + searchNo);
+                }
             }
         }
 
